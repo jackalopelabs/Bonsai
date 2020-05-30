@@ -3,8 +3,8 @@ path: web/wp
 #   docroot: web
 
 @development:
-  ssh: vagrant@bonsai.test/srv/www/bonsai.com/current
+  ssh: vagrant@bonsai.test/srv/www/bonsai.jackalope.io/current
 @staging:
-  ssh: web@bonsai-test-v02/srv/www/bonsai.com/current
-# @production:
-#   ssh: web@bonsai.com/srv/www/bonsai.com/current
+  ssh: web@bonsai-test-v02/srv/www/bonsai.jackalope.io/current
+@production:
+  ssh: web@bonsai.jackalope.io/srv/www/bonsai.jackalope.io/current

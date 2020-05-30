@@ -4,6 +4,9 @@
 # Version 0.0.1
 # Copyright (c) Mason Lawlor
 
+# Composer install Wordpress and Plugins
+cd .. && composer install & cd scripts
+
 # Install WP Core
 wp @development core install --url=bonsai.jackalope.io --title=Project_Bonsai --admin_user=admin --admin_password=admin --admin_email=mason@jackalope.io
 

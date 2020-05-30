@@ -7,10 +7,10 @@
 DEVDIR="web/app/uploads/"
 DEVSITE="http://bonsai.test/"
 
-PRODDIR="web@example.com:/srv/www/example/shared/uploads/"
-PRODSITE="https://example.com"
+PRODDIR="web@bonsai.jackalope.io:/srv/www/bonsai.jackalope.io/shared/uploads/"
+PRODSITE="https://bonsai.jackalope.io"
 
-STAGDIR="web@bonsai-test-v02:/srv/www/bonsai.com/shared/uploads/"
+STAGDIR="web@bonsai-test-v02:/srv/www/bonsai.jackalope.io/shared/uploads/"
 STAGSITE="http://159.89.131.18/"
 
 FROM=$1
