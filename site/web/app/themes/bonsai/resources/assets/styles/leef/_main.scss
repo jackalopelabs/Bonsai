@@ -1,0 +1,20 @@
+@import "common/bootstrap";
+@import "common/global";
+@import "common/responsive";
+@import "common/shorthand";
+@import "common/typography";
+@import "common/utilities";
+
+// Uncomment the components you want to use
+@import "components/accordion";
+@import "components/buttons";
+// @import "components/charts";
+@import "components/cta";
+@import "components/faq";
+@import "components/forms";
+@import "components/modals";
+@import "components/svg";
+@import "components/ui";
+
+// Uncomment the pages you want to use
+@import "pages/home/home";

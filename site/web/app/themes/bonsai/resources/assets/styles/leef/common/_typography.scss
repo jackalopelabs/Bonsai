@@ -1,0 +1,106 @@
+// Fonts
+.bebas {
+  font-family: $font-family-bold;
+  word-spacing: 0.15em;
+}
+
+.sans {
+  font-family: $font-family-sans-serif;
+}
+
+.block {
+  font-family: $font-family-bold;
+}
+
+h1,
+h2,
+h3 {
+  @extend .bebas;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 300;
+}
+
+.mute {
+  color: $gray-500;
+}
+
+.smaller {
+  font-size: 66%;
+}
+
+.small-50 {
+  font-size: 50%;
+}
+
+.bigger {
+  font-size: 150%;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.text-spaced {
+  letter-spacing: 0.8rem;
+}
+
+.ls {
+  &-6 {
+    letter-spacing: 6px;
+  }
+
+  &-8 {
+    letter-spacing: 8px;
+  }
+}
+
+// Styling
+a {
+  transition: color 1s ease;
+
+  &:hover {
+    color: $blue;
+    text-decoration: none;
+  }
+}
+
+.lead {
+  font-size: 24px;
+
+  @extend .mute;
+}
+
+.muli {
+  // font-family: muli;
+}
+
+h2.muli {
+  color: slateblue;
+}
+
+h5.muli {
+  color: slateblue;
+}
+
+ul {
+  li {
+    @extend .pt-2;
+  }
+}

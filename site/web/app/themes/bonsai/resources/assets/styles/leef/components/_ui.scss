@@ -1,0 +1,25 @@
+// Countdown Timer
+#timer {
+  span {
+    display: block;
+    font-size: 0.8rem;
+  }
+
+  #days,
+  #hours,
+  #minutes,
+  #seconds {
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 1;
+    padding: 10px;
+  }
+
+  #minutes {
+    color: #acacac;
+  }
+
+  #seconds {
+    color: $primary;
+  }
+}

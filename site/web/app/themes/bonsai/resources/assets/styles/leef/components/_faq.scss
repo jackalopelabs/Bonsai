@@ -1,0 +1,18 @@
+#faq {
+  .card-header {
+    background-color: white !important;
+    border-radius: $border-radius;
+  }
+
+  h5 {
+    @extend .text-dark;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    @extend .text-muted;
+  }
+}

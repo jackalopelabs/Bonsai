@@ -1,0 +1,12 @@
+#bonsai-cta {
+  max-width: 200px;
+
+  h1 {
+    font-size: 4.5rem;
+    margin-top: -220px;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 0;
+    }
+  }
+}

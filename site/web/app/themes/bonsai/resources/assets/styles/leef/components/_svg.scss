@@ -1,0 +1,202 @@
+// bonsai
+#bonsai-logo {
+  opacity: 0.6;
+
+  .st1 {
+    display: none;
+  }
+
+  .st2 {
+    display: inline;
+    fill: none;
+    stroke: #b3b3b3;
+    stroke-width: 0.5;
+    stroke-miterlimit: 10;
+  }
+
+  .st8 {
+    fill: #303030;
+  }
+}
+
+#big-bonsai {
+  .st2 {
+    display: none;
+  }
+
+  .st3 {
+    display: inline;
+    fill: none;
+    stroke: #b3b3b3;
+    stroke-width: 0.5;
+    stroke-miterlimit: 10;
+  }
+}
+
+#bonsai-tools {
+  opacity: 0.75;
+
+  .st0,
+  .st1,
+  .st3 {
+    fill: #303030;
+  }
+
+  .st1,
+  .st3 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+  }
+
+  .st3 {
+    fill: #fff;
+  }
+}
+
+#flowchartv2 {
+  .st0 {
+    fill: none;
+    stroke: #c1ccd7;
+  }
+
+  .st1 {
+    fill: #a983ff;
+  }
+
+  .st2 {
+    fill: #fff;
+  }
+
+  .st3 {
+    fill: #7c80ff;
+  }
+
+  .st4 {
+    fill: #fff;
+    enable-background: new;
+  }
+
+  .st5 {
+    fill: #9494ff;
+  }
+}
+
+#tools_v01-0 {
+  .st0,
+  .st1,
+  .st3 {
+    fill: #303030;
+  }
+
+  .st1,
+  .st3 {
+    fill-rule: evenodd;
+    clip-rule: evenodd;
+  }
+
+  .st3 {
+    fill: #fff;
+  }
+}
+
+#vertical-bracket {
+  .st0 {
+    fill: #fff;
+    stroke: #00d1b2;
+    stroke-miterlimit: 10;
+  }
+}
+
+#bonsai-logo-color {
+  .st2 {
+    display: none;
+  }
+
+  .st3 {
+    display: inline;
+    fill: none;
+    stroke: #b3b3b3;
+    stroke-width: 0.5;
+    stroke-miterlimit: 10;
+  }
+}
+
+#bonsai {
+  svg {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+
+    .st1 {
+      display: none;
+    }
+
+    .st2 {
+      fill: none;
+      stroke: #b3b3b3;
+      stroke-width: 0.5;
+      stroke-miterlimit: 10;
+    }
+
+    .st2,
+    .st5 {
+      display: inline;
+    }
+
+    .st7 {
+      fill: #fff;
+    }
+
+    .st8 {
+      fill: none;
+      stroke: #acacac;
+      stroke-miterlimit: 10;
+    }
+
+    .st9 {
+      fill: #acacac;
+    }
+
+    .st10 {
+      fill: #303030;
+    }
+
+    .st27,
+    .st36 {
+      fill: none;
+      stroke: #00d1b2;
+      stroke-width: 0.5;
+      stroke-miterlimit: 10;
+    }
+
+    .st36 {
+      fill: #fff;
+    }
+  }
+}
+
+#svg {
+  &-apple {
+    height: 42px;
+    width: auto;
+
+    .st0 {
+      fill: #acacac;
+    }
+  }
+
+  &-xcode {
+    height: 42px;
+    width: auto;
+
+    .st0 {
+      fill: #acacac;
+    }
+  }
+}
+
+#cred {
+  .st0 {
+    fill: #525352;
+  }
+}

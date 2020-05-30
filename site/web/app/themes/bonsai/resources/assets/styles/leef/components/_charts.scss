@@ -1,0 +1,199 @@
+input {
+  // box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  padding: 20px 46px 20px 20px;
+  border-radius: 4px;
+}
+
+// Horizontal Bar Graph
+.progress-bar.acticoat {
+  animation: percent-25 0.5s ease-in;
+  animation-delay: 0.25s;
+}
+
+.progress-bar.hydrofera {
+  animation: percent-90 0.75s ease-in;
+  animation-delay: 0.5s;
+}
+
+@keyframes percent-25 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 25%;
+  }
+}
+
+@keyframes percent-90 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+// @keyframes scales {
+//   from {
+//     transform: scale(0.8);
+//   }
+//
+//   to {
+//     transform: scale(1.1);
+//   }
+// }
+
+// Curvy Line Graph
+.ion-social-dribbble {
+  color: #ec4989;
+}
+
+.chart {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  margin: 0 auto;
+  background-size: 29px 29px;
+  background-position: -11px 11px;
+
+  &::before {
+    display: inline-block;
+    font-size: 0.875em;
+    position: absolute;
+    left: -3.5em;
+    top: 16px;
+    content: "5 \a 4 \a 3 \a 2 \a 1";
+    white-space: pre;
+    height: 100%;
+    line-height: 4.7;
+    text-align: right;
+
+    @extend .mute;
+  }
+}
+
+.dataset {
+  fill-opacity: 0.8;
+  -webkit-filter: url(#dropshadow);
+  filter: url(#dropshadow);
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-transform: scaleY(0.01);
+  transform: scaleY(0.01);
+  opacity: 0.5;
+}
+
+#dataset-1 {
+  fill: $purple;
+}
+
+#dataset-2 {
+  fill: $success;
+}
+
+#dataset-3 {
+  fill: $blue;
+}
+
+@keyframes raise {
+  0% {
+    -webkit-transform: scaleY(0.01);
+    transform: scaleY(0.01);
+  }
+
+  75% {
+    -webkit-transform: scaleY(1.1);
+    transform: scaleY(1.1);
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+.loaded .dataset {
+  opacity: 0.66;
+  -webkit-animation: raise 0.5s ease 0.2s forwards;
+  animation: raise 0.5s ease 0.2s forwards;
+}
+
+.loaded #dataset-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0.5s;
+}
+
+.loaded #dataset-2 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 1.25s;
+}
+
+.loaded #dataset-3 {
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.75s;
+}
+//
+// // Horizontal Bar Graphs: https://codepen.io/masoninthesis/pen/ERoJor
+// .chart-02 {
+//   .wrap {
+//     width: 50%;
+//     margin: 0 auto;
+//   }
+//
+//   ul {
+//     li {
+//       line-height: 2;
+//       font-weight: bold;
+//       font-size: 0.85em;
+//       text-transform: uppercase;
+//       clear: both;
+//
+//       &::before {
+//         content: "\2023";
+//         padding: 0 1em 0 0;
+//       }
+//     }
+//   }
+//
+//   .bar {
+//     background: $purple;
+//     width: 0;
+//     margin: 0.25em 0;
+//     color: #fff;
+//     position: relative;
+//     transition: width 2s, background 0.2s;
+//     -webkit-transform: translate3d(0, 0, 0);
+//     clear: both;
+//
+//     &:nth-of-type(2n) {
+//       background: lighten($purple, 10%);
+//     }
+//
+//     .label {
+//       font-size: 0.75em;
+//       padding: 1em;
+//       background: $blue;
+//       width: 8em;
+//       display: inline-block;
+//       position: relative;
+//       z-index: 2;
+//       font-weight: bold;
+//
+//       // .light {
+//       // 	background: lighten($blue, 10%);
+//       // }
+//     }
+//   }
+//
+//   .count {
+//     position: absolute;
+//     right: 0.25em;
+//     top: 0.75em;
+//     padding: 0.15em;
+//     font-size: 0.75em;
+//     font-weight: bold;
+//   }
+// }

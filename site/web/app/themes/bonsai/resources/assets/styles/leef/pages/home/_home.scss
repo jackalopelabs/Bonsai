@@ -1,0 +1,18 @@
+.home {
+  .modal-backdrop {
+    @extend .dark-gradient;
+  }
+
+  .modal-backdrop.show {
+    opacity: 0.96 !important;
+  }
+}
+
+// Navigation Bar
+#nav {
+  #menu-primary-nav {
+    a {
+      @extend .text-muted;
+    }
+  }
+}

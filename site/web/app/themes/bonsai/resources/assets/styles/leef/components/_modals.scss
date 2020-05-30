@@ -1,0 +1,20 @@
+// Modals
+#navCornerCta {
+  .btn-sm {
+    transition: opacity 0.5s ease;
+  }
+}
+
+.modal-open {
+  #navCornerCta {
+    z-index: 1050 !important;
+
+    .btn-sm {
+      opacity: 0 !important;
+    }
+  }
+}
+
+.modal-content {
+  border-radius: $border-radius;
+}

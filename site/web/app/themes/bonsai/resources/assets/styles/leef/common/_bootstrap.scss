@@ -1,0 +1,89 @@
+// Custom Bootstrap Overwrites
+.card {
+  border: none !important;
+  box-shadow: $btn-box-shadow;
+
+  .card-header {
+    border-bottom: none;
+  }
+
+  .card-body {
+    border-radius: $border-radius;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.bg-dark {
+  .card-body {
+    p {
+      color: white;
+    }
+  }
+}
+
+.btn-success {
+  @extend .primary-gradient;
+}
+
+figure {
+  padding: 0;
+}
+
+.floating-cards {
+  perspective: 1500px;
+
+  .card {
+    width: 420px;
+    height: 420px;
+    padding: 45px 40px;
+    user-select: none;
+    border-radius: 25px;
+
+    .stack {
+      width: 420px;
+      height: 20px;
+      padding: 0 40px;
+      margin: 2px;
+      user-select: none;
+      border-radius: 10px;
+
+      // @extend .miami;
+    }
+  }
+
+  .card-right {
+    transform: rotate3d(0.5, -0.866, 0, 15deg) rotate(1deg);
+  }
+
+  .card-left {
+    transform: rotate3d(0.5, 0.866, 0, 15deg) rotate(1deg);
+  }
+}
+
+// Badges
+.badge {
+  font-weight: lighter;
+  border-radius: 0.35rem;
+  padding-top: 4px;
+
+  @extend .my-1;
+
+  &-success {
+    color: white !important;
+  }
+
+  &-warning {
+    color: white !important;
+  }
+
+  &-light {
+    color: $gray-800;
+  }
+}
+
+// Navigation Menu
+.dropdown-menu {
+  border: none !important;
+  box-shadow: $btn-box-shadow;
+}

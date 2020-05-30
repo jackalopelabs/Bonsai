@@ -1,0 +1,449 @@
+// Widths
+.w-20 {
+  width: 20%;
+}
+
+.w-33 {
+  width: 33.3%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-66 {
+  width: 66%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+// Styling
+.no-shadow {
+  box-shadow: none !important;
+}
+
+// Custom mixins
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.no-hover {
+  transition: none !important;
+
+  &:hover {
+    color: initial !important;
+    border-color: initial !important;
+    background-color: initial !important;
+  }
+}
+
+// Spacing
+//////////
+// Padding
+@include media-breakpoint-only(sm) {
+  .px-sm-5 {
+    padding: 0 3rem 0 3rem !important;
+  }
+
+  .pl-sm-0 {
+    padding-left: 0;
+  }
+
+  .pr-sm-0 {
+    padding-right: 0;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .px-md-5 {
+    padding: 0 3rem 0 3rem !important;
+  }
+
+  .pl-md-0 {
+    padding-left: 0;
+  }
+
+  .pr-md-0 {
+    padding-right: 0;
+  }
+}
+
+// Margin
+@include media-breakpoint-only(sm) {
+  .mx-sm-5 {
+    margin: 0 3rem 0 3rem !important;
+  }
+
+  .ml-sm-0 {
+    margin-left: 0;
+  }
+
+  .mr-sm-0 {
+    margin-right: 0;
+  }
+}
+
+@include media-breakpoint-only(md) {
+  .mx-md-5 {
+    margin: 0 3rem 0 3rem !important;
+  }
+
+  .ml-md-0 {
+    margin-left: 0;
+  }
+
+  .mr-md-0 {
+    margin-right: 0;
+  }
+}
+
+// Colors
+.primary {
+  &-color {
+    color: $primary;
+  }
+
+  &-bg {
+    background: $primary;
+  }
+}
+
+.success {
+  &-color {
+    color: $success;
+  }
+
+  &-bg {
+    background: $success;
+  }
+}
+
+.info {
+  &-color {
+    color: $info;
+  }
+
+  &-bg {
+    background: $info;
+  }
+}
+
+.danger {
+  &-color {
+    color: $danger;
+  }
+
+  &-bg {
+    background: $danger;
+  }
+}
+
+.warning {
+  &-color {
+    color: $warning;
+  }
+
+  &-bg {
+    background: $warning;
+  }
+}
+
+.navy {
+  &-color {
+    color: $primary;
+  }
+
+  &-bg {
+    background: $primary;
+  }
+}
+
+.white {
+  &-color {
+    color: white !important;
+  }
+
+  &-bg {
+    background: white;
+  }
+}
+
+.dark {
+  &-color {
+    color: $dark;
+  }
+
+  &-bg {
+    background: $dark;
+  }
+}
+
+// Redundant
+.accent {
+  &-color {
+    color: $green;
+  }
+
+  &-bg {
+    background: $green;
+  }
+}
+
+.blue-bg {
+  background: $blue !important;
+}
+
+// Gradients
+.danger-gradient {
+  background: radial-gradient(circle farthest-corner at right bottom, #d26578 52%, #682a84 79%);
+}
+
+.success-info {
+  background: linear-gradient(-135deg, $green 20%, $info 100%);
+}
+
+.info-brand {
+  background: linear-gradient(135deg, $info 20%, $primary 100%);
+}
+
+.success-info-brand {
+  background: radial-gradient(circle farthest-corner at right bottom, $green 0, $info 28%, $primary 52%);
+}
+
+// .bg-cool-gradient {
+//   background: linear-gradient(90deg, $blue-purple, $blue 200%);
+// }
+
+// Borders
+.active-stroke {
+  background: white;
+  border: $success solid 1px !important;
+}
+
+.light-stroke {
+  border: $light solid 1px !important;
+}
+
+.stroke {
+  &-light {
+    border: $light solid 2px !important;
+
+    &-round {
+      border: $light solid 2px !important;
+      border-radius: 4px !important;
+    }
+  }
+
+  &-active {
+    background: white;
+    border: $success solid 1px !important;
+
+    &-round {
+      border: $success solid 1px !important;
+      border-radius: 4px !important;
+    }
+  }
+}
+
+// Bootstrap Extensions
+.w-10 {
+  min-width: 10%;
+}
+
+.only-md {
+  display: none;
+
+  @include media-breakpoint-only(md) {
+    display: inherit !important;
+  }
+}
+
+// Flexbox
+.flex {
+  display: flex;
+  align-items: baseline;
+
+  &-s {
+    &-a {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    &-b {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-b-c {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &-c {
+    display: flex;
+    align-content: center;
+
+    &-c {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &-col {
+    &-c {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    &-end {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  }
+
+  &-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+// Cursor
+.pointer {
+  cursor: pointer;
+}
+
+// Mixins
+// .info-color {
+//   color: $info-color;
+// }
+
+// .light-purple {
+//   color: $light-purple;
+// }
+//
+// .blue-purple {
+//   color: $blue-purple;
+// }
+
+// .purple {
+//   color: $purple;
+// }
+//
+// .pink {
+//   color: $pink;
+// }
+
+// BGs
+// .bg-info-color {
+//   background-color: $info-color;
+// }
+//
+// .bg-light-purple {
+//   background-color: $light-purple;
+// }
+//
+// .bg-blue-purple {
+//   background-color: $blue-purple;
+// }
+//
+// .bg-purple {
+//   background-color: $purple;
+// }
+//
+// .bg-pink {
+//   background-color: $pink;
+// }
+
+// BG Stripes
+#stripes {
+  .stripes {
+    height: 300px;
+    grid: repeat(2, 200px) /1fr minmax(0, 1000px) 1fr;
+    -ms-flex-line-pack: justify;
+    align-content: space-between;
+    // background: $purple-gradient;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    display: grid;
+    transform: skewY(5deg);
+
+    @include media-breakpoint-down(sm) {
+      height: 420px;
+    }
+  }
+
+  .stripes :nth-child(1) {
+    grid-column: 2;
+    background: linear-gradient(90deg, #777bf8, #68d4f8 200%);
+  }
+
+  .stripes :nth-child(2) {
+    background: linear-gradient(90deg, #777bf8, #68d4f8 200%);
+  }
+
+  .stripes :nth-child(3) {
+    bottom: 0;
+    grid-row: 2;
+    background: linear-gradient(90deg, #777bf8, #68d4f8 200%);
+  }
+
+  // Stripes fallback
+  // .stripes {
+  //   height: 1000px;
+  // }
+  //
+  // .stripes span {
+  //   position: absolute;
+  //   height: 200px;
+  // }
+  //
+  // .stripes :nth-child(1), .stripes :nth-child(2) {
+  //   width: 25%;
+  // }
+  //
+  // .stripes :nth-child(2) {
+  //   top: 400px;
+  // }
+  //
+  // .stripes :nth-child(2) {
+  //   right: 0;
+  // }
+  //
+  // .stripes :nth-child(3) {
+  //   width: 25%;
+  //   bottom: 200px;
+  // }
+
+  // Media Qs
+  ///////////
+
+  // < Medium
+  // @include media-breakpoint-down(md) {
+  //   .stripes {
+  //     height: calc(40% - 120px)
+  //   }
+  // }
+
+  // Safari Only
+  // @media screen and (-webkit-min-device-pixel-ratio:0) {
+  //   .stripes {
+  //     height: calc(80% - 120px)
+  //   }
+  // }
+}

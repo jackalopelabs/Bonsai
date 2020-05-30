@@ -1,0 +1,101 @@
+.no-hover {
+  transition: none !important;
+
+  &:hover {
+    color: initial !important;
+    border-color: initial !important;
+    background-color: initial !important;
+  }
+}
+
+// Media Query Utilities
+///////////////////////////////////////////
+
+// Breakpoint Up
+
+// @include media-breakpoint-up(sm) { ... }
+
+// Widths
+.w-66-md-up {
+  width: inherit;
+
+  @include media-breakpoint-up(md) {
+    width: 66%;
+  }
+}
+
+.w-75-md-up {
+  width: inherit;
+
+  @include media-breakpoint-up(md) {
+    width: 75%;
+  }
+}
+
+.w-80-md-up {
+  width: inherit;
+
+  @include media-breakpoint-up(md) {
+    width: 80%;
+  }
+}
+
+// @include media-breakpoint-up(lg) { ... }
+// @include media-breakpoint-up(xl) { ... }
+
+// Breakpoint Down
+
+@include media-breakpoint-down(sm) {
+  // Typography
+  .center-sm-down {
+    text-align: center;
+  }
+
+  // Display
+  .mx-auto-sm-down {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .d-none-sm-down {
+    display: none;
+  }
+}
+
+// Medium Screens
+/////////////////
+
+@include media-breakpoint-down(md) {
+  // Typography
+  .center-md-down {
+    text-align: center;
+  }
+
+  // Display
+  .mx-auto-md-down {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .d-none-md-down {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  // Typography
+  .center-lg-down {
+    text-align: center;
+  }
+
+  // Display
+  .mx-auto-lg-down {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .d-none-lg-down {
+    display: none;
+  }
+}
+// @include media-breakpoint-down(xl) { ... }

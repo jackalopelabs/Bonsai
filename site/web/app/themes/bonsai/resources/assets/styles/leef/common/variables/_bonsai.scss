@@ -1,0 +1,73 @@
+// Typography
+$font-family-bold:  "Bebas", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+// Colors
+$dark-purple:       #0a50a0;
+$darker-purple:     #0a1a60;
+$dark-gradient:     linear-gradient(145deg, $darker-purple, $dark-purple 100%);
+
+.dark-gradient {
+  background: $dark-gradient;
+  background-color: $dark-gradient;
+}
+
+.text-dark-gradient {
+  color: $dark-gradient;
+}
+
+// $purple-gradient: linear-gradient(90deg, #777bf8, #68d4f8 200%);
+// $purple-gradient-reverse: linear-gradient(180deg, #777bf8, #68d4f8 200%);
+//
+// // Bug Fix
+//
+// $navbar-dark-toggler-icon-bg: none;
+// $navbar-light-toggler-icon-bg: none;
+//
+// // Custom Variables
+// //
+//
+// // colors
+// $blue:               #85a4ff !default;
+// $green:              #00d1b2 !default;
+// $crystal:                     #a27aff;
+// $grey:                        #3d3d3d;
+// $dark-grey:                   #303030;
+$purple:             #525ddc !default;
+// $purple-faded:  lighten ($purple,20%);
+// $purple-dark:    darken ($purple,20%);
+//
+// // $blue:                #7dabf6;
+// $light-purple:        #9494ff;
+// $blue-purple:         #7c80ff;
+// // $purple:              #a983ff;
+//
+//
+// $pink:                #dc87eb;
+//
+// $amazon-dark:         #232f3e;
+// $amazon-light:        #f3f3f3;
+// $light-font:          #777;
+// $info-color:          #a983ff;
+//
+// $purple-gradient: linear-gradient(90deg, $blue-purple, $blue 200%);
+// $purple-gradient-reverse: linear-gradient(180deg, $blue-purple, $blue 200%);
+//
+//
+//
+// // gradients
+// $miami:       linear-gradient(to right, $green, $purple);
+// $miami-faded: linear-gradient(90deg, rgba(133, 164, 255, 0.25), rgba(150, 129, 245, 0.25) 200%);
+// $iceland:     linear-gradient(to right, $green, $blue);
+//
+//
+// .miami {
+//   background: $miami;
+//
+//   &-faded {
+//     background: $miami-faded;
+//   }
+// }
+//
+// .iceland {
+//   background: $iceland;
+// }

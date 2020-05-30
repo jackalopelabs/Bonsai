@@ -1,0 +1,131 @@
+input.default {
+  font-size: 16px;
+  padding: 1.5rem 1rem 1.25rem;
+  border-radius: 6px;
+}
+
+// Forms
+.anti-sr-only {
+  position: inherit !important;
+  width: 100% !important;
+  height: 100% !important;
+  clip: inherit !important;
+  white-space: inherit !important;
+  clip-path: inherit !important;
+}
+
+/** Search form */
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  @extend .form-group;
+
+  font-weight: normal;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+// global, GF to BS conversion
+.gfield_required {
+  color: $danger;
+  padding-left: 2px;
+}
+
+.gform_wrapper {
+  // label {
+  //   @extend .screen-reader-text;
+  // }
+
+  .gfield {
+    list-style: none;
+
+    @extend .p-0;
+
+    .gfield_label {
+      @extend .screen-reader-text;
+    }
+  }
+
+  .button {
+    @extend .btn;
+  }
+}
+
+.gform_confirmation_message {
+  @extend .alert;
+  @extend .alert-warning;
+}
+
+.gform_fields {
+  margin: 1px !important;
+
+  @extend .p-0;
+}
+
+// Gravity Forms Styling
+.full-width-gf {
+  input,
+  textarea {
+    @extend .form-control;
+    @extend .w-100;
+  }
+
+  .gform_button {
+    @extend .btn;
+    @extend .btn-lg;
+    @extend .btn-primary;
+    @extend .w-100;
+  }
+}
+
+select {
+  @extend .form-control;
+  @extend .w-100;
+}
+
+.ginput_total {
+  color: #00c4cc !important;
+  font-size: 2rem !important;
+
+  @extend .btn;
+  @extend .btn-light;
+}
+
+// // Form #1: Bonsai Form
+#gform_1,
+#gform_2 {
+  #input_1_1,
+  #input_1_2,
+  #input_2_1,
+  #input_2_2 {
+    @extend .default;
+    @extend .w-100;
+    @extend .form-control;
+    @extend .mb-2;
+    @extend .mr-2;
+  }
+
+  .gform_footer {
+    @extend .w-100;
+
+    .button {
+      // margin-top: -17px;
+      padding: 0.95rem 1rem 0.8rem !important;
+
+      @extend .mt-3;
+      @extend .w-100;
+      @extend .btn-lg;
+      @extend .btn-primary;
+      // @extend .center-sm-down-btn;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.btn {
+  box-shadow: none;
+  transition: $btn-transition;
+
+  &:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 10px 14px 6px rgba(211, 214, 231, 0.5);
+  }
+}
+
+.btn-no-fx {
+  box-shadow: none;
+
+  &:hover {
+    transform: translateY(0) !important;
+    box-shadow: none !important;
+  }
+}
+
+.btn-round {
+  border-radius: 100px;
+  padding: 0.5rem 2rem !important;
+}
+
+.btn-primary {
+  border: none;
+
+  // @extend .primary-gradient;
+
+  &:hover {
+    // @extend .secondary-gradient;
+  }
+}
+
+// .btn-secondary {
+//   @extend .dark-gradient;
+// }
+
+.btn-outline-primary {
+  &:hover {
+    color: white !important;
+  }
+}
