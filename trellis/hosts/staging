@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [staging]
-your_server_hostname
+staging.bonsai.jackalope.io
 
 [web]
-your_server_hostname
+staging.bonsai.jackalope.io

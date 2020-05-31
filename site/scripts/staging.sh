@@ -18,7 +18,7 @@ wp @staging post create   --post_type=page --post_title=Podcast --post_status=pu
 wp @staging option update blogname "Project Bonsai"
 wp @staging option update blogdescription "Wordpress LMS Theme and Tutorials"
 # wp @staging option update admin_email mason@jackalope.io
-wp @staging user update 1 --user_pass=your-password-here
+wp @staging user update 1 --user_pass=admin
 wp @staging option update show_on_front "page"
 wp @staging option update page_on_front 2
 wp @staging option update page_for_posts 5

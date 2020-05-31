@@ -29,7 +29,7 @@ wp @development post create   --post_type=page --post_title=Podcast --post_statu
 wp @development option update blogname "Project Bonsai"
 wp @development option update blogdescription "Wordpress LMS Theme and Tutorials"
 # wp @development option update admin_email mason@jackalope.io
-wp @development user update 1 --user_pass=your-password-here
+wp @development user update 1 --user_pass=admin
 wp @development option update show_on_front "page"
 wp @development option update page_on_front 2
 wp @development option update page_for_posts 5
