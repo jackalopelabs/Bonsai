@@ -5,14 +5,21 @@
 # Copyright (c) Mason Lawlor
 
 # Composer install Wordpress and Plugins
-cd .. && composer install & cd scripts
+cd ..
+composer install
+
+# Vagrant Up
+cd ../trellis
+vagrant up
+cd ../site
 
 # Install WP Core
 wp @development core install --url=bonsai.jackalope.io --title=Project_Bonsai --admin_user=admin --admin_password=admin --admin_email=mason@jackalope.io
 
 # Install \ Theme
-cd ../web/app/themes/bonsai
+cd web/app/themes/bonsai
 yarn
+
 # Might not need yarn build and composer install
 yarn build
 composer install

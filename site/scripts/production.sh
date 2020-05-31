@@ -4,6 +4,21 @@
 # Version 0.0.1
 # Copyright (c) Mason Lawlor
 
+cd ../../trellis
+
+# Add SSH Key
+ssh-add -K
+
+# Privision Staging Server
+ansible-playbook server.yml -e env=production
+
+# Add SSH Key to ~/.ssh/know_hosts
+ssh-keygen -R bonsai.jackalope.io
+
+# Deploy to Production Server
+./bin/deploy.sh production bonsai.jackalope.io
+cd ../site/scripts
+
 # Install WP Core
 wp @production core install --url=bonsai.jackalope.io --title=Project_Bonsai --admin_user=admin --admin_password=admin --admin_email=mason@jackalope.io
 
