@@ -1,5 +1,10 @@
 ### Head
 
+### Bonsai Theme v0.0.1
+* Initial creation of Bonsai
+* Update to WordPress 5.4.1
+* Added Gravity Forms CLI plugin
+
 ### 1.13.4: 2020-04-24
 
 * fix(mu-plugins): Bump bedrock-autoloader version ([#512](https://github.com/roots/bedrock/pull/512))
