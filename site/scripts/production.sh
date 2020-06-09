@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Activate theme and create starter content
+# Provision, Deploy Production Server. Activate theme and create starter content.
 # Version 0.0.1
 # Copyright (c) Mason Lawlor
 
