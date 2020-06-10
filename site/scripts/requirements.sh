@@ -40,6 +40,9 @@ brew cask install --appdir="/Applications" vagrant
 # Install Vagrant Manager
 brew cask install --appdir="/Applications" vagrant-manager
 
+# Repair Vagrant Plugins (to avoid incompatible versions)
+vagrant plugin expunge --reinstall
+
 # Install Atom
 brew cask install --appdir="/Applications" atom
 

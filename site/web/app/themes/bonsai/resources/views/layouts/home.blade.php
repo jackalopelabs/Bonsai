@@ -25,6 +25,6 @@
 
     @include('pages.home.modals')
   </body>
-  <script src="https://fast.wistia.com/embed/medias/rgav9axm4z.jsonp" async></script>
-  <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+  <script src="https://fast.wistia.com/embed/medias/y669pp4nw1.jsonp" defer></script>
+  <script src="https://fast.wistia.com/assets/external/E-v1.js" defer></script>
 </html>

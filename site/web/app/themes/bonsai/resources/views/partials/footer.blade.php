@@ -9,22 +9,22 @@
         </div>
          <div class="col-sm">
           <ul class="list-unstyled">
-            <li><a href="/hydrofera-blue" id="4.2">Courses</a></li>
-            <li><a href="clinical-studies">Case Studies</a></li>
-            <li><a href="/why-blue/#testimonials">Services</a></li>
+            <li><a href="/courses/" id="4.2">Courses</a></li>
+            <li><a href="https://jackalope.io/#case-studies">Case Studies</a></li>
+            <li><a href="https://jackalope.io/">Services</a></li>
            </ul>
         </div>
         <div class="col-sm">
           <ul class="list-unstyled">
-            <li><a href="/contact/">Docs</a></li>
-            <li><a href="/about/">Blog</a></li>
-            <li><a href="/citations/">About</a></li>
+            <li><a href="/docs/">Docs</a></li>
+            <li><a href="https://jackalope.io/blog/">Blog</a></li>
+            <li><a href="http://jackalope.io/team/">About</a></li>
           </ul>
         </div>
         <div class="col-sm">
           <ul class="list-unstyled">
-            <li><a href="/blue-notes/" class="">Podcast</a></li>
-            <li><a href="" data-toggle="modal" data-target="#subscribeModal">Subscribe</a></li>
+            <li><a href="/podcast/" class="">Podcast</a></li>
+            <li><a href="" data-toggle="modal" data-target="#enrollModal">Subscribe</a></li>
            </ul>
         </div>
         <div class="col-sm">
@@ -45,7 +45,7 @@
           @php echo date("Y"); @endphp
         </small>
       </p>
-      <small class="smaller text-center mute">* Digital Ocean & Gravity Forms paid products not included</small>
+      <small class="smaller text-center mute">* DigitalOcean & Gravity Forms paid products not included</small>
     </div>
   </div>
   <div class="flex-c-c my-5">

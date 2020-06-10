@@ -1,22 +1,26 @@
-// Hack to prevent horizontal scrolling
+// Hack to prevent horizontal scrolling on body
+html,
 body {
+  max-width: 100%;
   overflow-x: hidden;
-
-  .overflow-x-hidden {
-    overflow-x: hidden;
-  }
 }
 
-// Colors
+// colors
 .primary-gradient {
   background: linear-gradient(375deg, $blue 0%, $green 66%);
   border: none;
 }
 
-.clickable {
-  cursor: pointer;
+.dark-gradient {
+  background: $dark-gradient;
+  background-color: $dark-gradient;
 }
 
+.text-dark-gradient {
+  color: $dark-gradient;
+}
+
+// shapes
 .bg-rectangle {
   position: absolute;
   top: 214px;
@@ -51,8 +55,4 @@ body {
   transform: rotate(35deg);
   border-radius: 35px;
   background: linear-gradient(360deg, rgba(163, 191, 250, 0.01) 0%, rgba(150, 129, 245, 0.56) 100%);
-}
-
-.card.active {
-  border: 1px solid $primary !important;
 }

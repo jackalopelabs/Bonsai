@@ -6,15 +6,6 @@ $dark-purple:       #0a50a0;
 $darker-purple:     #0a1a60;
 $dark-gradient:     linear-gradient(145deg, $darker-purple, $dark-purple 100%);
 
-.dark-gradient {
-  background: $dark-gradient;
-  background-color: $dark-gradient;
-}
-
-.text-dark-gradient {
-  color: $dark-gradient;
-}
-
 // $purple-gradient: linear-gradient(90deg, #777bf8, #68d4f8 200%);
 // $purple-gradient-reverse: linear-gradient(180deg, #777bf8, #68d4f8 200%);
 //

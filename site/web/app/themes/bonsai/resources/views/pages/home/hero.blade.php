@@ -1,10 +1,10 @@
-<div class="hero hero-homepage container flex-c-c flex-col-c mt-5 pt-5">
+<div class="hero hero-homepage container flex-col-c flex-c-c mt-5 pt-5">
   {{-- <img class="img-fluid pb-3 mb-md-0 hero-img" src="@asset('images/hero.png')" alt=""> --}}
-  <h6 class="uppercase mute text-spaced pt-5">Project <span class="text-success">Bonsai</span></h6>
-  <h1 class="hero-header">Simplified <span class="text-muted">Wordpress Development</span></h1>
-  {{-- <h6 class="uppercase mute text-spaced">Full-Stack Masterclass</h6> --}}
-
-  <p class="lead mute">Create this <span class="text-muted">exact website</span> <code class="badge badge-light" style="font-size: 24px;">with one command</code></p>
+  <div class="text-c-sm">
+    <h6 class="uppercase mute text-spaced pt-5">Project <span class="text-success">Bonsai</span></h6>
+    <h1 class="hero-header">Simplified <span class="text-muted">Wordpress Development</span></h1>
+    <p class="lead mute">Create this <span class="text-muted">exact website</span> <code class="badge badge-light" style="font-size: 24px;">with one command</code></p>
+  </div>
   {{-- <p class="lead mb-0"><small class="uppercase smaller mute"><strong>Join Us</strong> for a Real Time Project this March</small></p> --}}
 
   {{-- Video Play Button --}}
@@ -12,7 +12,7 @@
     <h1 style="font-size: 4.5rem;">
       <button class="btn btn-sm btn-round" type="button" name="button">
         <i class="fas fa-play mr-2"></i>
-        Intro video
+        Quick Setup
       </button>
     </h1>
   </a>

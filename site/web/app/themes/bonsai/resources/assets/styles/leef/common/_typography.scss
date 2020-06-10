@@ -104,3 +104,27 @@ ul {
     @extend .pt-2;
   }
 }
+
+.text-c-sm {
+  text-align: left;
+
+  @include media-breakpoint-up(sm) {
+    text-align: center;
+  }
+}
+
+.text-c-md {
+  text-align: left;
+
+  @include media-breakpoint-up(md) {
+    text-align: center;
+  }
+}
+
+.text-c-lg {
+  text-align: left;
+
+  @include media-breakpoint-up(lg) {
+    text-align: center;
+  }
+}

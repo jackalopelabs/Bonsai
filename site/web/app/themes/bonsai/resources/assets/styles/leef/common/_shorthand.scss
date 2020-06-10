@@ -28,13 +28,7 @@
   box-shadow: none !important;
 }
 
-// Custom mixins
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
+// Custom
 .no-hover {
   transition: none !important;
 

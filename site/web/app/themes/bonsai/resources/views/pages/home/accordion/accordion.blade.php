@@ -1,33 +1,33 @@
 <div class="container py-5" id="accordion">
   {{-- <h1><i class="mdi mdi-chart-gantt flex-c-c"></i></h1> --}}
   <h3 class="mt-3 text-center">Courses</h3>
-  <p class="text-muted text-center mb-5">Follow along while we create this exact Website</p>
+  <p class="text-muted text-center mb-5-lg">Follow along while we create this exact Website</p>
   <div class="row">
-    <div class="col-lg mt-5 pt-4">
+    <div class="col-lg mt-5 pt-5-lg hidden-xs">
       <div class="img-fluid text-center d-none d-lg-block d-xl-block px-5">
         @include('svg.flowchart-v02')
       </div>
     </div>
-    <div class="col-lg mt-3">
+    <div class="col-lg pt-5-lg">
       <div class="card">
         <div class="nav-bar flex-s-b">
           <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab">
                 <i class="fas fa-play fa-xs mr-2" aria-hidden="true"></i>
-                <small class="hidden-md-down text-muted">Watch</small>
+                <small class="hidden-md-down text-muted">Videos</small>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#tab2" role="tab">
                 <i class="fas fa-book fa-xs mr-2" aria-hidden="true"></i>
-                <small class="hidden-md-down text-muted">Read</small>
+                <small class="hidden-md-down text-muted">Docs</small>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" data-toggle="tab" href="#tab3" role="tab">
-                <i class="fas fa-headphones-alt fa-xs mr-2" aria-hidden="true"></i>
-                <small class="hidden-md-down text-muted">Listen</small>
+                <i class="fas fa-shopping-bag fa-xs mr-2" aria-hidden="true"></i>
+                <small class="hidden-md-down text-muted">Buy</small>
               </a>
             </li>
             {{-- <li class="nav-item">
@@ -45,7 +45,7 @@
         </div>
 
         <!-- Tab panes -->
-        <div class="tab-content p-5">
+        <div class="tab-content p-4-lg">
 
           <!--   Tab1 -->
           <div class="tab-pane active" id="tab1" role="tabpanel">
@@ -78,7 +78,7 @@
           <!--   /Tab5 -->
         </div>
       </div>
-      <div class="mt-5">
+      {{-- <div class="mt-5">
         <h4 href="javascript:void(0);"><span class="text-muted">Early Birds</span> Get Free Access</h4>
         <p class="mb-0">In coming months, more courses and products will be added. Some will go behind a paywall.</p>
         <p class="mute">Sign up now for legacy access.</p>
@@ -101,13 +101,13 @@
           </div>
         </div>
         <p class="mute text-right"><small><i>Project files in: Sketch, Photoshop, Github, etc.</i></small></p>
-        <button class="btn btn-lg btn-primary text-white px-5" data-toggle="modal" data-target="#myModal">
+        <button class="btn btn-lg btn-primary text-white px-5" data-toggle="modal" data-target="#enrollModal">
           <i class="mdi mdi-play mr-2"></i>
           Sign Up
         </button>
         <small class="mute ml-2" data-toggle="tooltip" data-placement="right" title="Just an email, and you get legacy benefits for life.">So.. <span class="underline">what's the catch?</span></small>
-        @include('partials.modals.apply')
-      </div>
+        @include('partials.modals.enroll')
+      </div> --}}
     </div>
   </div>
 </div>

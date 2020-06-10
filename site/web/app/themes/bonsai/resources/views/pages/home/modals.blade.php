@@ -1,4 +1,4 @@
-@include('partials.modals.home.freecourse')
-@include('partials.modals.home.enroll')
-@include('partials.modals.home.remind')
-@include('partials.modals.home.navmodal')
+@include('partials.modals.enroll')
+@include('partials.modals.freecourse')
+@include('partials.modals.navmodal')
+@include('partials.modals.remind')

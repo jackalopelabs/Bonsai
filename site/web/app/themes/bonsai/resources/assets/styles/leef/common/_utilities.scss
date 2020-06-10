@@ -8,12 +8,90 @@
   }
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 // Media Query Utilities
 ///////////////////////////////////////////
+
+// XS
+.show-xs {
+  @extend .d-block;
+  @extend .d-sm-none;
+}
+
+.hidden-xs {
+  @extend .d-none ;
+  @extend .d-sm-block;
+}
+
+.hidden-xs-flex {
+  @extend .d-none ;
+  @extend .d-sm-flex;
+}
+
+//SM
+.hidden-sm {
+  @extend .d-sm-none;
+  @extend .d-md-block;
+}
+
+.hidden-sm-flex {
+  @extend .d-sm-none;
+  @extend .flex;
+}
 
 // Breakpoint Up
 
 // @include media-breakpoint-up(sm) { ... }
+
+// Spacing ////////////////////////////////
+///////////////////////////////////////////
+
+// Padding 5 LG
+.p-5-lg {
+  padding: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    padding: 3rem;
+  }
+}
+
+.pt-5-lg {
+  padding-top: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 3rem;
+  }
+}
+
+// Padding 5 MD
+.p-5-md {
+  padding: 3rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 1rem;
+  }
+}
+
+// Padding 4
+.p-4-lg {
+  padding: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    padding: 1.5rem;
+  }
+}
+
+// Margin 5
+.mb-5-lg {
+  margin-bottom: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 3rem;
+  }
+}
 
 // Widths
 .w-66-md-up {

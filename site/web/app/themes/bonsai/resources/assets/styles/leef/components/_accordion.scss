@@ -26,14 +26,17 @@
         .nav-link {
           border: none;
           transition: all 0.3s ease;
+          color: $gray-400;
 
           &.active {
             border-image-source: linear-gradient(45deg, rgb(248, 249, 250), rgb(255, 255, 255));
             border-image-slice: 1;
+            color: $primary;
           }
 
           &:hover {
             border-bottom: none;
+            color: $secondary;
           }
         }
       }

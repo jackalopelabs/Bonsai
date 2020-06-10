@@ -22,6 +22,10 @@
   }
 }
 
+.card.active {
+  border: 1px solid $primary !important;
+}
+
 .btn-success {
   @extend .primary-gradient;
 }
