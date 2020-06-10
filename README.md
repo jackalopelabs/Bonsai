@@ -55,13 +55,11 @@ To download with the command line, run:
 
 You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
 
-### First, Check
-
-If you're recreating a project, you may want to check these things just to be sure:
-
- - Remove unnecessary Virtualbox machines
- - Clear: `~/.ssh/known_hosts`
- - Clear: `~/../../etc/hosts`
+>## First, Check
+>If you're recreating a project, you may want to check these things just to be sure:
+> - Remove unnecessary Virtualbox machines
+> - Clear: `~/.ssh/known_hosts`
+> - Clear: `~/../../etc/hosts`
 
 # Servers
 
