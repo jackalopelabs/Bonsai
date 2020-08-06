@@ -1,0 +1,7 @@
+.sensei {
+  #accordion {
+    & > .card {
+      position: fixed;
+    }
+  }
+}

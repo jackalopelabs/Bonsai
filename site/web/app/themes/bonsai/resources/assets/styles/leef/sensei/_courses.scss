@@ -1,0 +1,314 @@
+// Global sensei
+.sensei-button {
+  border-radius: 0.75rem !important;
+  text-transform: initial;
+  font-size: 1.5rem;
+  font-weight: 500 !important;
+}
+
+.to-do-list {
+  margin-bottom: 0 !important;
+
+  @extend .list-unstyled;
+
+  li {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.green {
+  .value {
+    background-color: $success !important;
+  }
+}
+
+// My Courses
+#my-courses {
+  .col-1 {
+    max-width: 100% !important;
+  }
+}
+
+.icon {
+  @extend .d-none;
+}
+
+.single-lesson {
+  // Lessons
+  .page-cover-image,
+  .page-header-icon {
+    @extend .d-none;
+  }
+
+  .type-lesson {
+    @extend .flex-col-c;
+
+    .lesson-title {
+      @extend .d-none;
+    }
+
+    .page-title {
+      font-size: 2rem;
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+
+    .entry {
+      .wistia_responsive_padding {
+        @extend .mt-4;
+      }
+    }
+
+    footer > p > .button {
+      background: $secondary !important;
+
+      @extend .sensei-button;
+    }
+  }
+}
+
+.sensei {
+  // Global
+  .sensei-message {
+    border-radius: 0.75rem !important;
+  }
+
+  .send-message-button {
+    font-weight: 500 !important;
+    background: $secondary !important;
+  }
+
+  form {
+    .quiz-submit {
+      @extend .sensei-button;
+    }
+
+    .complete {
+      background: $success !important;
+    }
+
+    .save {
+      background: $secondary !important;
+    }
+
+    .reset {
+      background: $gray-300 !important;
+    }
+  }
+
+  // Quiz
+  #sensei-quiz-list {
+    p {
+      font-style: italic;
+
+      @extend .mute;
+    }
+  }
+
+  .tick {
+    background-color: #ccf6f0 !important;
+    border-color: none !important;
+    color: #006d5d !important;
+  }
+
+  .answer-feedback {
+    @extend .alert-info;
+  }
+
+  // Courses Page
+  .sensei-archive-controls {
+    .sensei-course-filters {
+      li {
+        a {
+          font-weight: 500;
+
+          @extend .btn;
+
+          &.active {
+            background: $gray-300;
+          }
+        }
+      }
+    }
+
+    .archive-header {
+      @extend .my-5;
+    }
+  }
+
+  .course-container {
+    border-bottom: none;
+
+    .thumbnail {
+      width: 100%;
+    }
+
+    .course-excerpt {
+      @extend .d-none;
+    }
+  }
+
+  // Course Page
+  .course {
+    @extend .card;
+    @extend .p-4;
+    @extend .my-3;
+
+    .course-start {
+      background: $primary !important;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    .in-progress {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .send-message-button {
+      background: $secondary !important;
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+
+  // Lesson Page
+  .course-lessons {
+    // @extend .d-flex;
+
+    .lesson {
+      @extend .card;
+      @extend .card-body;
+      @extend .my-3;
+
+      h2 {
+        font-size: 2rem;
+        margin: 0 !important;
+
+        a {
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+// Course Page
+.single-course {
+  .type-course {
+    @extend .no-shadow;
+
+    header > h1 {
+      @extend .d-none;
+    }
+
+    .course-meta {
+      .completed {
+        background: $success !important;
+        font-weight: 500;
+      }
+
+      .view-results,
+      .sensei-certificate-link {
+        background: $gray-100;
+        text-transform: initial;
+        font-size: 12px;
+        font-weight: 500;
+        color: $gray-900;
+        padding: 10px;
+      }
+    }
+
+    .module {
+      @extend .card;
+
+      header {
+        background: none;
+        border-top: none !important;
+
+        .completed {
+          background: $success !important;
+          font-weight: 500;
+        }
+      }
+
+      .module-description {
+        background: none;
+      }
+
+      .module-lessons {
+        font-weight: 500;
+      }
+
+      .lessons-list {
+        a {
+          background: none;
+        }
+
+        .completed {
+          a {
+            &::before {
+              color: $success !important;
+            }
+          }
+        }
+      }
+    }
+
+    .lesson {
+      @extend .mt-5;
+
+      .lesson-meta {
+        .complete {
+          color: $success !important;
+        }
+      }
+
+      .thumbnail {
+        width: 100%;
+      }
+
+      .entry {
+        @extend .d-none;
+      }
+    }
+  }
+}
+
+.my-courses {
+  .woo-image {
+    width: 100%;
+  }
+
+  #user-course-status-toggle {
+    #sensei-user-courses-all-action {
+      border-radius: 4px 4px 0 0;
+      font-weight: 500;
+    }
+
+    .inactive {
+      border: none;
+    }
+  }
+}
+
+// Forms
+// // Form #1, 2, 3: Bonsai, Questions, and Enroll
+#sensei_user_login,
+#sensei_user_pass {
+  @extend .default;
+  @extend .w-100;
+  @extend .form-control;
+  @extend .mb-2;
+  @extend .mr-2;
+
+  .sensei-login-submit {
+    .button {
+      @extend .btn;
+      @extend .btn-secondary;
+      @extend .px-4;
+    }
+  }
+}

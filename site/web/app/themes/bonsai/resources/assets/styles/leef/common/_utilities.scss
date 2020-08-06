@@ -21,9 +21,12 @@
   @extend .d-sm-none;
 }
 
-.hidden-xs {
-  @extend .d-none ;
-  @extend .d-sm-block;
+.xs-hidden {
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    display: initial;
+  }
 }
 
 .hidden-xs-flex {

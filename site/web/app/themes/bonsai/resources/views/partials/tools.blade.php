@@ -1,35 +1,3 @@
-<div class="" style="margin: 0 -18px -40px 0;z-index:1;">
-  @include('svg.bonsai.big-bonsai')
-</div>
-<div class="card mx-auto active" style="margin-top: -7px;">
-  <div class="card-body mt-5">
-    <div class="py-3">
-      <a href="https://github.com/jackalopeio/bonsai/archive/master.zip" class="btn btn-lg primary-gradient text-white btn-round px-5">
-        <i class="fas fa-download mr-1"></i>
-        Download Bonsai
-      </a>
-      <a href="https://github.com/jackalopeio/bonsai/" target="_blank">
-        <p class="text-center text-muted mb-0 pt-3">
-          <i class="fab fa-github mr-1"></i> Github
-        </p>
-      </a>
-      <div class="text-center">
-        <p class="badge badge-light">v0.0.1</p>
-      </div>
-    </div>
-  </div>
-</div>
-
-@include('svg.bonsai.drain-bracket')
-
-<div class="container mx-auto card bg-light no-shadow mb-3">
-  <div class="container flex-col-c flex-c-c">
-    @include('svg.bonsai.tools_v01-4')
-  </div>
-</div>
-
-<small class="text-center uppercase mute">Includes:</small>
-
 <div class="container mb-5">
   <div class="text-center">
     <p class="badge badge-secondary text-white mr-2">
@@ -46,6 +14,9 @@
     </p>
     <p class="badge badge-secondary text-white mr-2">
       Gravity Forms*
+    </p>
+    <p class="badge badge-secondary text-white mr-2">
+      Sensei LMS
     </p>
     <p class="badge badge-secondary text-white mr-2">
       Bootstrap 4

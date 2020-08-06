@@ -1,3 +1,10 @@
+// Development
+.gfield_creditcard_warning {
+  .gfield_creditcard_warning_message {
+    @extend .d-none;
+  }
+}
+
 input.default {
   font-size: 16px;
   padding: 1.5rem 1rem 1.25rem;
@@ -94,19 +101,30 @@ select {
 
 .ginput_total {
   color: #00c4cc !important;
-  font-size: 2rem !important;
+  font-size: 1rem !important;
 
   @extend .btn;
   @extend .btn-light;
 }
 
-// // Form #1: Bonsai Form
+// // Form #1, 2, 3: Bonsai, Questions, and Enroll
+#gform_0,
 #gform_1,
-#gform_2 {
+#gform_2,
+#gform_3,
+#gform_4 {
+  #input_1,
   #input_1_1,
   #input_1_2,
+  #input_1_4_5,
+  #input_2,
   #input_2_1,
-  #input_2_2 {
+  #input_2_2,
+  #input_3_1,
+  #input_3_3_3,
+  #input_3_3_6,
+  #input_3_5,
+  #input_4_1 {
     @extend .default;
     @extend .w-100;
     @extend .form-control;
@@ -114,18 +132,50 @@ select {
     @extend .mr-2;
   }
 
+  #choice_3_1 {
+    margin: -1px 4px 0 0 !important;
+  }
+
+  #input_1_2 {
+    border-radius: 4px;
+    padding: 0 12px !important;
+
+    @extend .bg-secondary;
+    @extend .text-white;
+  }
+
+  #input_1_4_1 {
+    border-radius: 6px;
+    padding: 1rem 1rem 2rem;
+  }
+
+  #input_3_3_3_container,
+  #input_3_3_6_container {
+    label {
+      @extend .screen-reader-text;
+    }
+  }
+
   .gform_footer {
     @extend .w-100;
+    @extend .mt-0;
+    @extend .pt-1;
 
     .button {
       // margin-top: -17px;
       padding: 0.95rem 1rem 0.8rem !important;
 
-      @extend .mt-3;
       @extend .w-100;
       @extend .btn-lg;
       @extend .btn-primary;
-      // @extend .center-sm-down-btn;
     }
   }
+}
+
+// Lastpass Hack
+#__lpform_input_1,
+#__lpform_input_2,
+#__lpform_input_1_numspan,
+#__lpform_input_2_numspan {
+  @extend .d-none;
 }

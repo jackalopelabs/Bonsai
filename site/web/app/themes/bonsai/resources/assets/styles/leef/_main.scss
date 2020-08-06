@@ -14,8 +14,13 @@
 @import "components/forms";
 @import "components/header";
 @import "components/modals";
+@import "components/sidebar";
 @import "components/svg";
 @import "components/ui";
 
 // Uncomment the pages you want to use
-@import "pages/home/home";
+@import "pages/home";
+@import "pages/docs";
+
+// Sensei LMS
+@import "sensei/courses";

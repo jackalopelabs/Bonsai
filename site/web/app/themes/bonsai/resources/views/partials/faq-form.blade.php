@@ -53,8 +53,11 @@
             <div class="card-body bg-light">
               <p>While Bonsai is currently free to use however you please, there are a couple of costs involved.</p>
               <ul>
-                <li><a href="https://digitalocean.com/">Digital Ocean</a> starts at $5/m</li>
-                <li><a href="https://gravityforms.com/">Gravity Forms</a> is the plugin we recommend using to create forms. The cost will <a href="#">range from $49-259</a>. Creating forms is not an easy task, so this will save you the salary of a programmer.</li>
+                <li><a href="" data-toggle="modal" data-target="#enrollModal">Bonsai Pro Access</a> starts at $5/m</li>
+                <li><a target="_blank" href="https://digitalocean.com/">Digital Ocean</a> starts at $5/m</li>
+                <li><a target="_blank" href="https://gravityforms.com/">Gravity Forms</a> is the plugin we recommend using to create forms. The cost will <a href="#">range from $49-259</a>.</li>
+                <li><a target="_blank" href="https://roots.io/plugins/sync-script/">Sync Script</a> starts at $10 <small class="mute uppercase smaller">(optional, but recommended)</small></li>
+                <li><a target="_blank" href="https://roots.io/plugins/soil/">Soil</a> starts at $24 <small class="mute uppercase smaller">(optional, but recommended)</small></li>
               </ul>
             </div>
           </div>
@@ -69,11 +72,12 @@
           </div>
           <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
             <div class="card-body bg-light">
-              <p>If you click and buy a Digital Ocean server or a Gravity Forms Membership, we will get an affiliate fee.</p>
-              <p>That helps a lot, but our main goal is to build a community. There are three ways to do this:</p>
+              <p>If you purchase <a href="" data-toggle="modal" data-target="#enrollModal">Bonsai Pro Access</a>, a Digital Ocean server, or a Gravity Forms Membership through this site, we will get an affiliate fee.</p>
+              <p>That helps a lot, but our main goal is to build a community. Here are other ways to help:</p>
               <ul>
                 <li>Go <a href="https://instagram.com/jackalopetv">give us a follow on Instagram</a> and give us feedback on upcoming classes and products.</li>
-                <li>Join our Slack channel</li>
+                <li><a href="" data-toggle="modal" data-target="#enrollModal">Subscribe</a> to our newsletter</li>
+                <li><a href="" data-toggle="modal" data-target="#enrollModal">Get Pro Access</a> to Join our Slack channel</li>
                 <li>Contribute on <a href="https://github.com/jackalopeio">Github</a></li>
               </ul>
             </div>

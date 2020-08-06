@@ -2,7 +2,7 @@
   <div class="container">
     <div id="footer" class="container my-5 py-5">
       <div class="row">
-        <div class="col-sm">
+        <div class="col-sm py-3">
           {{-- @include('svg.logo') --}}
           @include('svg.bonsai.bonsai-logo-03')
           <span class="text-spaced"></span>
@@ -24,7 +24,7 @@
         <div class="col-sm">
           <ul class="list-unstyled">
             <li><a href="/podcast/" class="">Podcast</a></li>
-            <li><a href="" data-toggle="modal" data-target="#enrollModal">Subscribe</a></li>
+            <li><a href="" data-toggle="modal" data-target="#subscribeModal">Subscribe</a></li>
            </ul>
         </div>
         <div class="col-sm">

@@ -1,4 +1,17 @@
 // Custom Bootstrap Overwrites
+.fixed-top-sm-up {
+  margin-bottom: -80px;
+
+  @include media-breakpoint-up(sm) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    margin-bottom: 0;
+  }
+}
+
 .card {
   border: none !important;
   box-shadow: $btn-box-shadow;
@@ -9,8 +22,8 @@
 
   .card-body {
     border-radius: $border-radius;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    // border-top-left-radius: 0;
+    // border-top-right-radius: 0;
   }
 }
 
@@ -90,4 +103,19 @@ figure {
 .dropdown-menu {
   border: none !important;
   box-shadow: $btn-box-shadow;
+}
+
+// Alerts
+.alert {
+  border: none;
+}
+
+// List Group Items
+.list-group-item {
+  margin-right: -1px !important;
+}
+
+// Tooltips
+.tooltip-inner {
+  white-space: pre-wrap;
 }

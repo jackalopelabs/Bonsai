@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Bonsai Requirements
-# Version 0.0.1
+# Version 0.0.2
 # Copyright (c) Mason Lawlor
 
 # Install Xcode Developer Tools
@@ -16,11 +16,15 @@ xcode-select --install
 # Install Python
 # brew install python
 
-#Install Node Version Manager
-brew install nvm
+# Install Telnet
+brew install telnet
 
-# Install Git
-# brew install git
+#Install Node 10
+brew install node@10
+brew link node@10 --force
+
+# Install WP-CLI
+brew install wp-cli
 
 # Install Ansible
 brew install ansible
@@ -32,13 +36,13 @@ brew install composer
 brew install yarn
 
 # Install Vagrant
-brew cask install --appdir="/Applications" virtualbox
+# brew cask install --appdir="/Applications" virtualbox
 
 # Install Vagrant
 brew cask install --appdir="/Applications" vagrant
 
 # Install Vagrant Manager
-brew cask install --appdir="/Applications" vagrant-manager
+# brew cask install --appdir="/Applications" vagrant-manager
 
 # Repair Vagrant Plugins (to avoid incompatible versions)
 vagrant plugin expunge --reinstall
@@ -51,3 +55,6 @@ brew cask install --appdir="/Applications" iterm2
 
 # Install Github Desktop App
 brew cask install --appdir="/Applications" github
+
+# Install SVGO
+npm install -g svgo

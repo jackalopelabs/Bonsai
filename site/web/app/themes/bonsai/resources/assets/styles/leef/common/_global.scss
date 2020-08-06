@@ -5,6 +5,16 @@ body {
   overflow-x: hidden;
 }
 
+.logged-in {
+  .fixed-top-sm-up {
+    top: 50px;
+  }
+
+  #wpadminbar {
+    height: 50px;
+  }
+}
+
 // colors
 .primary-gradient {
   background: linear-gradient(375deg, $blue 0%, $green 66%);
@@ -18,41 +28,4 @@ body {
 
 .text-dark-gradient {
   color: $dark-gradient;
-}
-
-// shapes
-.bg-rectangle {
-  position: absolute;
-  top: 214px;
-  right: -100px;
-  height: 500px;
-  width: 500px;
-  opacity: 0.27;
-  transform: rotate(25deg);
-  border-radius: 35px;
-  background: linear-gradient(360deg, rgba(163, 191, 250, 0.01) 0%, rgba(150, 129, 245, 0.56) 100%);
-}
-
-.bg-rectangle-0 {
-  position: absolute;
-  top: 214px;
-  right: -100px;
-  height: 500px;
-  width: 500px;
-  opacity: 0.1;
-  transform: rotate(15deg);
-  border-radius: 35px;
-  background: linear-gradient(360deg, rgba(163, 191, 250, 0.01) 0%, rgba(150, 129, 245, 0.56) 100%);
-}
-
-.bg-rectangle-1 {
-  position: absolute;
-  top: 214px;
-  right: -100px;
-  height: 500px;
-  width: 500px;
-  opacity: 0.15;
-  transform: rotate(35deg);
-  border-radius: 35px;
-  background: linear-gradient(360deg, rgba(163, 191, 250, 0.01) 0%, rgba(150, 129, 245, 0.56) 100%);
 }

@@ -1,0 +1,39 @@
+.blog {
+  .content {
+    .list-group-item {
+      @extend .py-3;
+
+      a {
+        vertical-align: sub;
+      }
+    }
+  }
+
+  article {
+    @extend .mt-5;
+  }
+}
+
+.single {
+  h1 {
+    font-size: 3rem;
+
+    @extend .mt-5;
+    @extend .pt-5;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+
+    @extend .mt-5;
+    @extend .pt-3;
+  }
+
+  h3 {
+    font-weight: 800;
+    font-size: 1.5rem;
+
+    @extend .sans;
+    @extend .mt-4;
+  }
+}
