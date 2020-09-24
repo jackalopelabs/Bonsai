@@ -27,7 +27,7 @@ composer install
 cd ../../../..
 
 # Install WP CORE
-wp @development core install --url=bonsai.jackalope.io --title=Project_Bonsai --admin_user=admin --admin_password=admin --admin_email=mason@jackalope.io
+wp @development core install --url=bonsai.jackalope.io --title=Bonsai_LMS --admin_user=admin --admin_password=admin --admin_email=admin@example.com
 # Activate theme, create pages, and config reading settings
 wp @development theme activate bonsai/resources
 # wp @development plugin activate --all
@@ -54,7 +54,7 @@ wp @development post create --post_type=post --post_title="Read Me" ./content/re
 # Wordpress Settings
 wp @development option update blogname "Project Bonsai"
 wp @development option update blogdescription "Wordpress LMS System & Theme"
-# wp @development option update admin_email mason@jackalope.io
+# wp @development option update admin_email admin@example.com
 # wp @development user update 1 --user_pass=admin
 wp @development option update show_on_front "page"
 wp @development option update page_on_front 2
@@ -65,13 +65,12 @@ wp @development rewrite structure '/%postname%/'
 ###############
 
 # Install GF Plugins
-
-wp @development gf install --key=b6a4cdefce90f89cefebbeee31da0111 --activate
-wp @development gf install gravityformsmailchimp --key=b6a4cdefce90f89cefebbeee31da0111 --activate
-wp @development gf install gravityformsslack --key=b6a4cdefce90f89cefebbeee31da0111 --activate
-wp @development gf install gravityformsstripe --key=b6a4cdefce90f89cefebbeee31da0111 --activate
-wp @development gf install gravityformsuserregistration --key=b6a4cdefce90f89cefebbeee31da0111 --activate
-# wp @development gf license update b6a4cdefce90f89cefebbeee31da0111
+wp @development gf install --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsslack --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf license update xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Create Bonsai Form: ID 1
 wp @development gf form create "Bonsai Form"

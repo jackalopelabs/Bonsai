@@ -1,0 +1,102 @@
+<p><img style="max-width:500px;" src="https://jackalope.io/app/uploads/2020/06/screenshot.png" alt="Project Bonsai Screenshot"></p>
+<h1 id="project-bonsai">Project Bonsai</h1>
+<p><a href="https://bonsai.jackalope.io">Project Bonsai</a> is a secure and modern Wordpress stack.</p>
+<p><strong>The goal:</strong> To simplify the process of building a Roots Wordpress site with a streamlined configuration with a corresponding <a href="https://bonsai.jackalope.io">tutorial videos</a>.</p>
+<p>Bonsai is a custom configuration of <a href="https://wordpress.org/">Wordpress</a>, <a href="https://roots.io/">Roots</a>, <a href="https://roots.io/trellis">Trellis</a>, <a href="https://roots.io/bedrock">Bedrock</a>, <a href="https://roots.io/sage">Sage</a>, <a href="https://getbootstrap.com/">Bootstrap</a> and other open source projects.</p>
+<h3 id="tutorial">Tutorial</h3>
+<p>Trello board: <a href="https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run">Speed Run</a></p>
+<p>For a video tutorial on creating a Bonsai project from scratch, go to  the <a href="https://bonsai.jackalope.io">official website</a> or our <a href="https://www.youtube.com/user/JackalopeMedia/">Youtube channel</a>.</p>
+<h1 id="quick-setup">Quick Setup</h1>
+<p>We’re going to take a few minutes to setup all the requirements to ensure that deploying Project Bonsai goes smoothly:</p>
+<h2 id="download-bonsai">Download Bonsai</h2>
+<p>Download project Bonsai from the <a href="https://bonsai.jackalope.io">official website</a> or from the <a href="https://github.com/jackalopeio/bonsai/">github repository</a>.</p>
+<p>Don’t forget to move Bonsai from your downloads folder into your <code>~/Sites</code> directory.</p>
+<blockquote>
+<p>OR</p>
+</blockquote>
+<p>To download with the command line, run:<br>
+<code>cd ~/sites</code> and <code>git clone https://github.com/jackalopeio/Bonsai.git</code></p>
+<h2 id="requirements">Requirements</h2>
+<h3 id="create-ssh-keys">Create SSH Keys</h3>
+<ul>
+<li>To use <a href="https://www.digitalocean.com/docs/droplets/how-to/add-ssh-keys/create-with-openssh/">OpenSSH</a>, open terminal and run: <code>ssh key-gen</code></li>
+<li>Add public SSH key <a href="https://github.com/settings/ssh/new">to Github</a></li>
+<li>Add public SSH key <a href="https://cloud.digitalocean.com/account/security">to DigitalOcean</a></li>
+</ul>
+<h3 id="install-requirements">Install Requirements</h3>
+<p><strong>Shell Script:</strong> If you’re going to run Bonsai/site/scripts/requirements.sh for installation, don’t forget to set permissions by running:<br>
+<code>cd ~/sites/Bonsai/site/scripts &amp;&amp; chmod -R 777 .</code></p>
+<ul>
+<li><a href="https://developer.apple.com/xcode/">Install xcode dev tools</a>: <code>xcode-select --install</code></li>
+<li><a href="https://jasonmccreary.me/articles/upgrade-php-mac-os-x/">Update to PHP &gt;=7.2</a></li>
+<li><a href="https://brew.sh/">Homebrew</a>: <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code></li>
+<li><a href="https://nodejs.org/en/download/">Node</a>: <code>brew install nvm</code></li>
+<li><a href="https://hvops.com/articles/ansible-mac-osx/">Ansible</a>: <code>brew install ansible</code></li>
+<li><a href="https://getcomposer.org/download/">Composer</a>: <code>brew install composer</code></li>
+<li><a href="https://classic.yarnpkg.com/en/docs/install#mac-stable">Yarn</a>: <code>brew install yarn</code></li>
+<li><a href="https://www.virtualbox.org/wiki/Downloads">Virtualbox</a>: <code>brew cask install --appdir="/Applications" virtualbox</code></li>
+<li><a href="https://www.vagrantup.com/downloads.html">Vagrant</a>: <code>brew cask install --appdir="/Applications" vagrant</code></li>
+<li><a href="https://github.com/lanayotech/vagrant-manager/releases">Vagrant Manager</a>: <code>brew cask install --appdir="/Applications" vagrant-manager</code></li>
+<li><a href="https://atom.io/">Atom</a>: <code>brew cask install --appdir="/Applications" atom</code></li>
+<li><a href="https://www.iterm2.com/">iTerm2</a>: <code>brew cask install --appdir="/Applications" iterm2</code></li>
+<li>Github Desktop App: <code>brew cask install --appdir="/Applications" github-desktop</code></li>
+</ul>
+<p>You can rename the current file by clicking the file name in the navigation bar or by clicking the <strong>Rename</strong> button in the file explorer.</p>
+<blockquote>
+<h2 id="first-check">First, Check</h2>
+<p>If you’re recreating a project, you may want to check these things just to be sure:</p>
+<ul>
+<li>Remove unnecessary Virtualbox machines</li>
+<li>Clear: <code>~/.ssh/known_hosts</code></li>
+<li>Clear: <code>~/../../etc/hosts</code></li>
+</ul>
+</blockquote>
+<h1 id="servers">Servers</h1>
+<p>By default, we use DigitalOcean base Ubuntu servers for Project Bonsai.</p>
+<h3 id="nameservers">Nameservers:</h3>
+<p>First, you’ll want to make sure that your Domain Registrant points towards <a href="https://www.digitalocean.com/community/tutorials/how-to-point-to-digitalocean-nameservers-from-common-domain-registrars">DigitalOcean</a>.</p>
+<ul>
+<li><code>ns1.digitalocean.com</code></li>
+<li><code>ns2.digitalocean.com</code></li>
+<li><code>ns3.digitalocean.com</code></li>
+</ul>
+<h3 id="create-droplets">Create Droplets:</h3>
+<p>Create two base Ubuntu DigitalOcean Droplets. Link them to your SSH key.</p>
+<h3 id="setup-dns">Setup DNS:</h3>
+<ul>
+<li>Go to DigitalOcean’s Dashboard &gt; Networking</li>
+<li>Add new domain or click on existing one</li>
+<li>A Record: <a href="http://www.subdomain.domain.com">www.subdomain.domain.com</a></li>
+<li>A Record: <a href="http://subdomain.domain.com">subdomain.domain.com</a></li>
+<li>CNAME: *.subdomain.domain.com</li>
+</ul>
+<h3 id="configure-etchosts">Configure etc/hosts:</h3>
+<p>Add IP and domains to <code>etc/hosts</code>, run: <code>sudo vim ~/../../etc/hosts</code></p>
+<pre><code>111.11.111.111 subdomain.example.com
+555.55.555.555 example.com www.example.com
+</code></pre>
+<h3 id="configure-.sshconfig">Configure ~/.ssh/config:</h3>
+<p>Add IP and hostname to <code>~/.ssh/config</code>, run: <code>sudo vim ~/.ssh/config</code></p>
+<pre><code>Host bonsai-staging
+        HostName 111.11.111.11
+        Port 22
+        User root
+        IdentityFile ~/.ssh/id_rsa
+
+Host bonsai-production
+        HostName 555.55.555.555
+        Port 22
+        User root
+        IdentityFile ~/.ssh/id_rsa
+</code></pre>
+<h3 id="test-ssh-connection">Test SSH Connection:</h3>
+<p>Make sure that your SSH connections are working by SSH’ing into the servers:</p>
+<ul>
+<li>Staging, run: <code>ssh root@subdomain.example.com</code></li>
+<li>Production, run: <code>ssh root@example.com</code></li>
+</ul>
+<h1 id="configure-bonsai">Configure Bonsai</h1>
+<p>Under construction, for the rest of the tutorial look at:</p>
+<p>Trello board: <a href="https://trello.com/invite/b/gtpcYNvC/961d55ce28eeb7a573be8914df41c797/bonsai-speed-run">Speed Run</a></p>
+<p>Roots Trellis Docs: <a href="https://roots.io/docs/trellis/master/wordpress-sites/#normal-settings">The Basics</a></p>
+<p>For a video tutorial on creating a Bonsai project from scratch, go to  the <a href="https://bonsai.jackalope.io">official website</a> or our <a href="https://www.youtube.com/user/JackalopeMedia/">Youtube channel</a>.</p>
