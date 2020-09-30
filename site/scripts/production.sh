@@ -5,12 +5,14 @@
 # Copyright (c) Mason Lawlor
 
 # Clean DB
-wp @production db clean
-
+# wp @production db clean
 cd ../../trellis
 
 # Add SSH Key
 ssh-add -K
+
+# Run this before provision?
+ansible-galaxy install -r galaxy.yml
 
 # Privision Production Server
 ansible-playbook server.yml -e env=production

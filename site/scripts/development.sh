@@ -5,7 +5,7 @@
 # Copyright (c) Mason Lawlor
 
 # Clean DB
-wp @development db clean
+# wp @development db clean
 
 # Composer install Wordpress and Plugins
 cd ..

@@ -5,16 +5,20 @@
 # Copyright (c) Mason Lawlor
 
 # Clean DB
-wp @staging db clean
-
+# wp @staging db clean
 cd ../../trellis
 
 # Add SSH Key
 ssh-add -K
+# Run this before provision
+ansible-galaxy install -r galaxy.yml
+
 # Privision Staging Server
 ansible-playbook server.yml -e env=staging
+
 # Add SSH Key to ~/.ssh/know_hosts
 ssh-keygen -R bonsai-staging.jackalope.io
+
 # Deploy to Staging Server
 ./bin/deploy.sh staging bonsai.jackalope.io
 cd ../site/scripts
