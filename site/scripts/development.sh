@@ -47,6 +47,7 @@ wp @development post delete 1 --force
 wp @development post update 2 --post_type=page --post_title=Home --post_status=publish --page_template='views/template-home.blade.php'
 wp @development post create --post_type=page --post_title=Docs --post_status=publish --page_template='views/template-blog.blade.php'
 wp @development post create --post_type=page --post_title=Podcast --post_status=publish --page_template='views/template-podcast.blade.php'
+# wp @development post create --post_type=page --post_title=Checkout --post_status=publish --page_template='views/template-checkout.blade.php'
 
 # Create Posts
 wp @development post create --post_type=post --post_title="Read Me" ./content/readme.html --post_status=publish --post_author=1

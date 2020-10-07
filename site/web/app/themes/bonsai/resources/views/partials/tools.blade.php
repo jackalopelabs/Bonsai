@@ -1,3 +1,12 @@
+@include('svg.bonsai.drain-bracket')
+<div class="container mx-auto card bg-light no-shadow mb-3">
+  <div class="container flex-col-c flex-c-c">
+    @include('svg.bonsai.tools-dark')
+  </div>
+</div>
+
+<small class="text-center uppercase mute">Powered by</small>
+
 <div class="container mb-5">
   <div class="text-center">
     <p class="badge badge-secondary text-white mr-2">

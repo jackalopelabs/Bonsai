@@ -54,14 +54,7 @@
 
   </div>
 </div>
-@include('svg.bonsai.drain-bracket')
-<div class="container mx-auto card bg-light no-shadow mb-3">
-  <div class="container flex-col-c flex-c-c">
-    @include('svg.bonsai.tools_v01-4')
-  </div>
-</div>
 
-<small class="text-center uppercase mute">Powered by</small>
 @include('partials.tools')
 
 <a href="https://jackalope.io/the-smart-site-manifesto/" target="_blank" class="text-center mt-5 btn btn-sm btn-outline-secondary" style="padding: 1.2rem 2rem 1rem;"><i class="fas fa-list mr-2"></i> The Smart Site Manifesto</a>
