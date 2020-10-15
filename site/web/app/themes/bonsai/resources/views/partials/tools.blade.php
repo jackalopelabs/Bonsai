@@ -1,7 +1,8 @@
+<button class="newsletter-btn" name="button" data-toggle="modal" data-target="#subscribeModal"><i class="fas fa-envelope mr-2 text-dark"></i> Subscribe to Newsletter</button>
 @include('svg.bonsai.drain-bracket')
-<div class="container mx-auto card bg-light no-shadow mb-3">
+<div class="container mx-auto card no-shadow mb-3">
   <div class="container flex-col-c flex-c-c">
-    @include('svg.bonsai.tools-dark')
+    @include('svg.bonsai.tools-white')
   </div>
 </div>
 

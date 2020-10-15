@@ -112,7 +112,8 @@ select {
 #gform_1,
 #gform_2,
 #gform_3,
-#gform_4 {
+#gform_4,
+#gform_5 {
   #input_1,
   #input_1_1,
   #input_1_2,
@@ -124,7 +125,13 @@ select {
   #input_3_3_3,
   #input_3_3_6,
   #input_3_5,
-  #input_4_1 {
+  #input_3_6,
+  #input_3_6_2,
+  #input_4_1,
+  #input_5,
+  #input_5_1,
+  #input_5_2,
+  #input_5_4_5, {
     @extend .default;
     @extend .w-100;
     @extend .form-control;
@@ -136,7 +143,9 @@ select {
     margin: -1px 4px 0 0 !important;
   }
 
-  #input_1_2 {
+  #input_1_2,
+  #input_5_2,
+  #input_5_5 {
     border-radius: 4px;
     padding: 0 12px !important;
 
@@ -144,7 +153,8 @@ select {
     @extend .text-white;
   }
 
-  #input_1_4_1 {
+  #input_1_4_1,
+  #input_5_4_1 {
     border-radius: 6px;
     padding: 1rem 1rem 2rem;
   }

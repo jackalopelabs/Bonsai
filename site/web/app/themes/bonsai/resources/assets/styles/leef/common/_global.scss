@@ -15,6 +15,18 @@ body {
   }
 }
 
+.error404 {
+  @extend .container;
+  @extend .d-none;
+}
+
+// hidden page titles
+.consult-thanks {
+  .page-header {
+    @extend .d-none;
+  }
+}
+
 // colors
 .primary-gradient {
   background: linear-gradient(375deg, $blue 0%, $green 66%);
@@ -28,4 +40,13 @@ body {
 
 .text-dark-gradient {
   color: $dark-gradient;
+}
+
+// borders
+.border-active {
+  border: 1px solid $primary;
+}
+
+.border-secondary {
+  border: 1px solid $secondary;
 }

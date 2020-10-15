@@ -1,33 +1,50 @@
-$dark-bg-1: #111;
-$dark-bg-2: #191c21;
-$dark-bg-3: rgba(0, 0, 0, 0.9);
+$bg-dark-1: #111;
+$bg-dark-2: #191c21;
+$bg-dark-3: rgba(0, 0, 0, 0.9);
+$bg-dark-0: $gray-700;
+
+.bg-dark-0 {
+  background: $bg-dark-0;
+}
+
+.bg-dark-1 {
+  background: $bg-dark-1;
+}
+
+.bg-dark-2 {
+  background: $bg-dark-2;
+}
+
+.bg-dark-3 {
+  background: $bg-dark-3;
+}
 
 body {
-  background: $dark-bg-1 !important;
+  background: $bg-dark-1 !important;
   color: white !important;
 }
 
 header {
-  // background: $dark-bg-3 !important;
+  // background: $bg-dark-3 !important;
   background: #191c21 !important;
 }
 
 // accordion
 .card {
-  background: $dark-bg-2;
+  background: $bg-dark-2;
 
   .nav-bar {
-    background: $dark-bg-2 !important;
+    background: $bg-dark-2 !important;
 
     .nav-tabs {
       border-image-source: linear-gradient(45deg, rgb(12, 12, 12), rgb(25, 33, 33)) !important;
 
       .nav-item {
-        background: $dark-bg-2 !important;
+        background: $bg-dark-2 !important;
         border-radius: 8px;
 
         .active {
-          background-color: $dark-bg-2 !important;
+          background-color: $bg-dark-2 !important;
         }
       }
     }
@@ -38,10 +55,10 @@ header {
   ul {
     li {
       a.toggle {
-        border: 1px solid $dark-bg-1 !important;
+        border: 1px solid $bg-dark-1 !important;
 
         &:hover {
-          background-color: $dark-bg-1 !important;
+          background-color: $bg-dark-1 !important;
         }
       }
     }
@@ -52,7 +69,7 @@ header {
 .badge,
 .btn {
   &-light {
-    background: $dark-bg-3 !important;
+    background: $bg-dark-3 !important;
     color: #fff !important;
   }
 
@@ -65,13 +82,9 @@ header {
 // Forms
 input,
 textarea {
-  background: $dark-bg-3 !important;
+  background: $bg-dark-3 !important;
   border: none !important;
-}
-
-#input_1_1,
-#input_1_2 {
-  border: none !important;
+  color: white !important;
 }
 
 .ginput_total {
@@ -79,7 +92,8 @@ textarea {
 }
 
 .StripeElement {
-  background-color: $dark-bg-3 !important;
+  // color: white !important;
+  // background-color: $bg-dark-3 !important;
   border: none !important;
 }
 
@@ -88,6 +102,16 @@ textarea {
 }
 
 // Modals
+.modal-header {
+  border-bottom: 1px solid #000 !important;
+
+  .close {
+    span {
+      color: white;
+    }
+  }
+}
+
 .modal-content {
   background-color: #111 !important;
   border: none;

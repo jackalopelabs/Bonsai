@@ -1,20 +1,21 @@
-<div class="" style="margin: 0 -18px -40px 0;z-index:1;">
+<div class="" style="margin: 0 -18px -40px 0;z-index:11;">
   @include('svg.bonsai.big-bonsai')
 </div>
-<div class="card mx-auto active" style="margin-top: -7px;">
+<div class="card mx-auto active" id="hero-cta" style="margin-top: -7px; z-index: 10;">
   <div class="card-body mt-5">
     <div class="py-3">
       <a href="" class="btn btn-lg primary-gradient text-white btn-round px-5" data-toggle="modal" data-target="#enrollModal">
         Get Pro Access
         <i class="fas fa-arrow-right ml-1"></i>
       </a>
+
       <a href="https://github.com/jackalopeio/bonsai/" target="_blank">
         <p class="text-center text-muted mb-0 pt-3">
           <i class="fab fa-github mr-1"></i> Github
         </p>
       </a>
       <div class="text-center">
-        <p class="badge badge-light">v0.0.4</p>
+        <p class="badge badge-light">v0.0.5</p>
       </div>
     </div>
     <div class="flex-s-b">

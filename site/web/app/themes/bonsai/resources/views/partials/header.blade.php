@@ -11,7 +11,7 @@
             <li class="pt-0"><a href="/my-courses">My Courses</a></li>
             <li class="pt-0"><a href="/courses-overview">Courses</a></li>
             <li class="pt-0"><a href="/docs">Docs</a></li>
-            <li class="pt-0"><a href="/podcast">Podcast</a></li>
+            <li class="pt-0"><a href="/consult">Consult</a></li>
           </ul>
           <a href="" class="btn btn-sm btn-success px-3 ml-3 text-white" style="padding-top: 10px !important;" data-toggle="modal" data-target="#loginModal">
             Login <i class="fas fa-sign-in-alt ml-2"></i>
@@ -46,7 +46,7 @@
         <div id="seconds"></div>
     </div>
     <div class="mt-2">
-      <small class="badge badge-light uppercase text-muted float-right" style="">Price Ends August 31st</small>
+      @include('partials.components.date')
     </div>
     <a href="" class="btn btn-sm btn-success px-4 py-2 mt-2" data-toggle="modal" data-target="#enrollModal">
       Get Pro Access

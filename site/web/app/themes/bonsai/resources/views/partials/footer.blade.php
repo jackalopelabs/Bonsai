@@ -10,8 +10,8 @@
          <div class="col-sm">
           <ul class="list-unstyled">
             <li><a href="/courses/" id="4.2">Courses</a></li>
+            <li><a href="/consult/" id="4.2">Consult <p class="badge badge-secondary ml-2">New</p></a></li>
             <li><a href="https://jackalope.io/#case-studies">Case Studies</a></li>
-            <li><a href="https://jackalope.io/">Services</a></li>
            </ul>
         </div>
         <div class="col-sm">

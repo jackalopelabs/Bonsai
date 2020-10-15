@@ -1,11 +1,11 @@
 <div class="row">
   <div class="col-sm-6 col-md-12">
-    <small class="pt-3 text-muted">Pro Access: Annual</small>
+    <small class="pt-3 text-muted">VIP Access: Monthly</small>
     <div class="cell py-4">
       <span class="text-center">
-        <h3 class=><small class="align-top small-50 text-muted">$</small>40</h3>
-        <p class="mute uppercase mb-0"><small>Annually</small></p>
-        <div class="badge badge-light">$20 off</div>
+        <h3 class=><small class="align-top small-50 text-muted">$</small>5</h3>
+        <p class="mute uppercase mb-0"><small>Monthly</small></p>
+        <div class="badge badge-light">$12 value</div>
       </span>
     </div>
   </div>
@@ -23,7 +23,7 @@
       <p>Slack Channel Access<small><i class="mdi mdi-information-outline mute" data-toggle="tooltip" data-placement="right" title="$29 value"></i></small></p>
     </div>
     {{-- <div class="cell">
-      <p><strong>30% Off Merch</strong><small><i class="mdi mdi-information-outline mute" data-toggle="tooltip" data-placement="right" title="$29 value"></i></small></p>
+      <p><strong>20% Off Merch</strong><small><i class="mdi mdi-information-outline mute" data-toggle="tooltip" data-placement="right" title="$29 value"></i></small></p>
     </div> --}}
   </div>
 </div>

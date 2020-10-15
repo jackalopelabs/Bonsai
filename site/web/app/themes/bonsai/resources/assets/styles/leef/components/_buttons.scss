@@ -41,3 +41,20 @@
     color: white !important;
   }
 }
+
+.newsletter-btn {
+  padding: 1.45rem 2.24rem 0.5rem;
+  margin-top: -1.25rem;
+  z-index: 0;
+  color: $gray-100;
+  transition: $btn-transition;
+
+  @extend .btn;
+  // @extend .btn-lg;
+  @extend .btn-success;
+
+  &:hover {
+    transform: translateY(2px) !important;
+    box-shadow: 0 10px 14px 6px rgba(211, 214, 231, 0.5);
+  }
+}

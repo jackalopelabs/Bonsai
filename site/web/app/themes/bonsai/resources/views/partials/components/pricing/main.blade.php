@@ -13,7 +13,7 @@
   <div class="row pt-4">
     <div class="col-sm-12 col-md card my-4 pt-3 text-center" style="margin-right: -4px;">
       @include('partials.components.pricing.col-1')
-      <button class="btn btn-outline-info mb-4" data-toggle="modal" data-target="#enrollModal">Enroll Now</button>
+      <button class="btn btn-outline-info mb-4" data-toggle="modal" data-target="#subscribeModal">Enroll Now</button>
     </div>
 
     <div class="col-sm-12 col-md active card mb-3 pt-3 text-center mt-3" style="z-index: 1;">
@@ -21,7 +21,7 @@
       <button class="btn btn-success mt-2" data-toggle="modal" data-target="#enrollModal">Enroll Now</button>
     </div>
 
-    <div class="col-sm-12 col-md card my-4 pt-3 bg-light text-center" style="margin-left: -4px;">
+    <div class="col-sm-12 col-md card my-4 pt-3 text-center" style="margin-left: -4px;">
       @include('partials.components.pricing.col-3')
       <button class="btn btn-dark mb-4" data-toggle="modal" data-target="#subscribeModal"><i class="fas fa-bell mr-2"></i> Remind Me</button>
     </div>

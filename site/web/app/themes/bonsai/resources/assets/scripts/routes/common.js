@@ -47,7 +47,7 @@ export default {
 
     // Countdown Timer
     function makeTimer() {
-      var endTime = new Date('1 October 2020 12:00:00 GMT+06:00');
+      var endTime = new Date('1 November 2020 12:00:00 GMT+06:00');
         endTime = (Date.parse(endTime) / 1000);
 
         var now = new Date();
