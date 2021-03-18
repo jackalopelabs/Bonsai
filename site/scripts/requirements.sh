@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Bonsai Requirements
-# Version 0.0.2
+# Version 0.0.7
 # Copyright (c) Mason Lawlor
 
 # Install Xcode Developer Tools

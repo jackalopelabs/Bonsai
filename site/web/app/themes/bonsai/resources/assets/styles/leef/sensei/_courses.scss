@@ -172,6 +172,13 @@
       font-size: 14px;
       font-weight: 500;
     }
+
+    header {
+      h2 {
+        font-size: 30px;
+        margin-top: 15px !important;
+      }
+    }
   }
 
   // Lesson Page
@@ -181,7 +188,6 @@
     .lesson {
       @extend .card;
       @extend .card-body;
-      @extend .my-3;
 
       h2 {
         font-size: 2rem;
@@ -258,9 +264,9 @@
     }
 
     .lesson {
-      @extend .mt-5;
-
       .lesson-meta {
+        @extend .mb-0;
+
         .complete {
           color: $success !important;
         }
@@ -295,14 +301,9 @@
 }
 
 // Forms
-// // Form #1, 2, 3: Bonsai, Questions, and Enroll
 #sensei_user_login,
 #sensei_user_pass {
-  @extend .default;
-  @extend .w-100;
-  @extend .form-control;
-  @extend .mb-2;
-  @extend .mr-2;
+  @extend .default-form-ext;
 
   .sensei-login-submit {
     .button {

@@ -15,10 +15,71 @@ body {
   }
 }
 
+// Scrollbar
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
+body::-webkit-scrollbar-track {
+  background: $gray-600;
+}
+
+.scroll-dark::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scroll-dark::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
+.scroll-dark::-webkit-scrollbar-track {
+  background: $gray-600;
+}
+
+.modal {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $gray-600;
+  }
+
+  .scroll-dark::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scroll-dark::-webkit-scrollbar-thumb {
+    background: $primary;
+  }
+
+  .scroll-dark::-webkit-scrollbar-track {
+    background: $gray-600;
+  }
+}
+
 .error404 {
   @extend .container;
   @extend .d-none;
 }
+
+.avatar {
+  @extend .rounded-circle;
+  @extend .my-2;
+}
+
+// Checkout Page
+// #navCornerCta {
+//   @extend .d-none;
+// }
 
 // hidden page titles
 .consult-thanks {

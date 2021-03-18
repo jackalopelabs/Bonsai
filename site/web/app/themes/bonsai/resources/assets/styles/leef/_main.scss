@@ -12,15 +12,20 @@
 @import "components/cta";
 @import "components/faq";
 @import "components/forms";
+@import "components/grid";
 @import "components/header";
 @import "components/modals";
 @import "components/sidebar";
 @import "components/svg";
 @import "components/ui";
 
-// Dark
-@import "dark/main";
-@import "dark/home";
+/* stylelint-disable */
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  @import "dark/main";
+  @import "dark/home";
+}
+/* stylelint-enable */
 
 // Uncomment the pages you want to use
 @import "pages/home";

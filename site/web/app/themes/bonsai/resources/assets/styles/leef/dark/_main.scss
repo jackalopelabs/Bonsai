@@ -24,20 +24,30 @@ body {
   color: white !important;
 }
 
-header {
-  // background: $bg-dark-3 !important;
-  background: #191c21 !important;
+code {
+  color: #e83e8c !important;
+}
+
+//header
+#nav-menu {
+  color: white !important;
+  letter-spacing: 0.1rem !important;
 }
 
 // accordion
 .card {
   background: $bg-dark-2;
 
+  .card-body {
+    background: $bg-dark-2 !important;
+  }
+
   .nav-bar {
     background: $bg-dark-2 !important;
 
     .nav-tabs {
-      border-image-source: linear-gradient(45deg, rgb(12, 12, 12), rgb(25, 33, 33)) !important;
+      border-image-source: none !important;
+      border-bottom: 1px solid $bg-dark-2 !important;
 
       .nav-item {
         background: $bg-dark-2 !important;
@@ -76,6 +86,51 @@ header {
   &:hover {
     transform: translateY(-2px) !important;
     box-shadow: none !important;
+  }
+}
+
+// Sensei UI
+.sensei {
+  .meter {
+    background: $bg-dark-1;
+  }
+
+  .status {
+    background: $bg-dark-1;
+  }
+
+  .sensei-message {
+    background: $bg-dark-2 !important;
+
+    a {
+      color: $secondary !important;
+    }
+  }
+
+  // Lesson
+  .sensei-breadcrumb {
+    background: none !important;
+  }
+
+  // My Courses
+  #user-course-status-toggle {
+    #sensei-user-courses-all-action {
+      background: $bg-dark-1;
+      border-color: $bg-dark-0;
+      border-bottom: 1px solid $bg-dark-0 !important;
+      color: white;
+    }
+
+    #sensei-user-courses-all-action.active {
+      border-color: $secondary;
+      border-bottom: 1px solid $secondary !important;
+    }
+
+    #user-course-status-toggle a {
+      color: $secondary;
+    }
+
+    border-bottom: 1px solid $bg-dark-0 !important;
   }
 }
 

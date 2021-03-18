@@ -1,4 +1,8 @@
 // Modals
+.modal-dialog {
+  max-width: 640px;
+}
+
 #navCornerCta {
   .btn-sm {
     transition: opacity 0.5s ease;
@@ -17,4 +21,10 @@
 
 .modal-content {
   border-radius: $border-radius;
+}
+
+#fullScreenModal {
+  .modal-dialog {
+    max-width: 100% !important;
+  }
 }

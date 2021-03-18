@@ -15,7 +15,7 @@
         </p>
       </a>
       <div class="text-center">
-        <p class="badge badge-light">v0.0.5</p>
+        <p class="badge badge-light">v0.0.7</p>
       </div>
     </div>
     <div class="flex-s-b">

@@ -18,7 +18,7 @@
             </h5>
           </div>
           <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-            <div class="card-body text-dark bg-light">
+            <div class="card-body bg-light">
               <p>Initial setup can take a few minutes.</p>
               <p>Configuration can take a couple minutes.</p>
               <p>After that, you run one command and sit back while your computer does all the work over 30-40 mins.</p>

@@ -1,0 +1,5 @@
+.desktop-grid {
+  @include media-breakpoint-up(lg) {
+    margin-top: 2.25rem !important;
+  }
+}

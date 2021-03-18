@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Default Mac Applications
-# Version 0.0.2
+# Version 0.0.7
 # Copyright (c) Mason Lawlor
 
 # Core Functionality

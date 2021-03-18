@@ -1,10 +1,10 @@
 <!-- Modal -->
 <div id="enrollNow">
-  <div class="modal fade mt-5" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+  <div class="modal fade mt-5" id="signupmodal" tabindex="-1" role="dialog" aria-labelledby="subscribeModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-envelope mute mr-2"></i> Subscribe for Updates</h5>
+          <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-envelope mute mr-2"></i> Signup 01</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>

@@ -1,5 +1,17 @@
 .mobile-menu {
   border: 1px solid $gray-200;
-  border-radius: 8px;
+  border-radius: 6px;
   max-height: 22px;
+  font-size: 18px;
+  letter-spacing: 0.06rem;
+}
+
+.logged-in {
+  .wpadminbar {
+    @extend .d-none;
+  }
+
+  .login-btn {
+    @extend .d-none;
+  }
 }

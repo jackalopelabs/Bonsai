@@ -2,7 +2,7 @@
   Template Name: Courses Template
 --}}
 
-@extends('layouts.app')
+@extends('layouts.courses')
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp

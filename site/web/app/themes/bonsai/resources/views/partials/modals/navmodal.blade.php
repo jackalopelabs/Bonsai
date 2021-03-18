@@ -11,15 +11,9 @@
       </div>
       <div class="modal-body">
         <ul id="menu-primary-nav" class="list-unstyled text-right">
-          <li class="pt-0"><a href="/courses">Courses</a></li>
+          <li class="pt-0"><a href="/groups">Groups</a></li>
           <li class="pt-0"><a href="/docs">Docs</a></li>
-          <li class="pt-0"><a href="/podcast">Podcast</a></li>
-          <li>
-            <a class="nav-link clickable btn btn-sm btn-success text-white" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-              Download
-              <i class="fas fa-download ml-2"></i>
-            </a>
-          </li>
+          <li class="pt-0"><a href="/tv">TV</a></li>
         </ul>
       </div>
     </div>

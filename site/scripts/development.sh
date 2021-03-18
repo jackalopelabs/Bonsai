@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Activate theme and create starter content
-# Version 0.0.2
+# Version 0.0.7
 # Copyright (c) Mason Lawlor
 
 # Clean DB
@@ -14,7 +14,7 @@ composer update
 
 # Vagrant Up
 cd ../trellis
-# vagrant up
+vagrant up
 cd ../site
 
 # Install \ Theme
@@ -27,7 +27,7 @@ composer install
 cd ../../../..
 
 # Install WP CORE
-wp @development core install --url=bonsai.jackalope.io --title=Bonsai_LMS --admin_user=admin --admin_password=admin --admin_email=admin@example.com
+wp @development core install --url=bonsai.jackalope.io --title=Bonsai --admin_user=admin --admin_password=admin --admin_email=your@email.com
 # Activate theme, create pages, and config reading settings
 wp @development theme activate bonsai/resources
 # wp @development plugin activate --all
@@ -47,16 +47,16 @@ wp @development post delete 1 --force
 wp @development post update 2 --post_type=page --post_title=Home --post_status=publish --page_template='views/template-home.blade.php'
 wp @development post create --post_type=page --post_title=Docs --post_status=publish --page_template='views/template-blog.blade.php'
 wp @development post create --post_type=page --post_title=Podcast --post_status=publish --page_template='views/template-podcast.blade.php'
-# wp @development post create --post_type=page --post_title=Checkout --post_status=publish --page_template='views/template-checkout.blade.php'
+wp @development post create --post_type=page --post_title=Checkout --post_status=publish --page_template='views/template-checkout.blade.php'
 
 # Create Posts
 wp @development post create --post_type=post --post_title="Read Me" ./content/readme.html --post_status=publish --post_author=1
 
 # Wordpress Settings
-wp @development option update blogname "Project Bonsai"
-wp @development option update blogdescription "Wordpress LMS System & Theme"
-# wp @development option update admin_email admin@example.com
-# wp @development user update 1 --user_pass=admin
+wp @development option update blogname "Bonsai.so"
+wp @development option update blogdescription "Community Platform & LMS"
+wp @development option update admin_email your@email.com
+wp @development user update 1 --user_pass=admin
 wp @development option update show_on_front "page"
 wp @development option update page_on_front 2
 wp @development option update page_for_posts 5
@@ -66,12 +66,21 @@ wp @development rewrite structure '/%postname%/'
 ###############
 
 # Install GF Plugins
-wp @development gf install --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
-wp @development gf install gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
-wp @development gf install gravityformsslack --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
-wp @development gf install gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
-wp @development gf install gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
-# wp @development gf license update xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+wp @development gf install --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsslack --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+wp @development gf install gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx --activate
+# wp @development gf license update xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Update GF Plugins
+# wp @development gf update --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformsmailchimp --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformsslack --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformsstripe --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformsuserregistration --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# wp @development gf update gravityformssendgrid --key=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Create Bonsai Form: ID 1
 wp @development gf form create "Bonsai Form"

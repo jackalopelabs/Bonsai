@@ -3,6 +3,72 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   @php wp_head() @endphp
+  <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.5.1/main.min.js'></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          initialView: 'dayGridMonth',
+          initialDate: '2021-03-07',
+          headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,timeGridDay'
+          },
+          events: [
+            {
+              title: 'All Day Event',
+              start: '2021-03-01'
+            },
+            {
+              title: 'Long Event',
+              start: '2021-03-07',
+              end: '2021-03-10'
+            },
+            {
+              groupId: '999',
+              title: 'Repeating Event',
+              start: '2021-03-09T16:00:00'
+            },
+            {
+              groupId: '999',
+              title: 'Repeating Event',
+              start: '2021-03-16T16:00:00'
+            },
+            {
+              title: 'Conference',
+              start: '2021-03-11',
+              end: '2021-03-13'
+            },
+            {
+              title: 'Meeting',
+              start: '2021-03-12T10:30:00',
+              end: '2021-03-12T12:30:00'
+            },
+            {
+              title: 'Lunch',
+              start: '2021-03-12T12:00:00'
+            },
+            {
+              title: 'Meeting',
+              start: '2021-03-12T14:30:00'
+            },
+            {
+              title: 'Birthday Party',
+              start: '2021-03-13T07:00:00'
+            },
+            {
+              title: 'Click for Google',
+              url: 'http://google.com/',
+              start: '2021-03-28'
+            }
+          ]
+        });
+        calendar.render();
+      });
+
+    </script>
   <!-- Hotjar Tracking Code for http://bonsai.jackalope.io -->
   <script>
       (function(h,o,t,j,a,r){
@@ -14,10 +80,25 @@
           a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <!-- Mixpanel Tracking Code for http://bonsai.jackalope.io -->
-  {{-- <script>(function(c,a){if(!a.__SV){var b=window;try{var d,m,j,k=b.location,f=k.hash;d=function(a,b){return(m=a.match(RegExp(b+"=([^&]*)")))?m[1]:null};f&&d(f,"state")&&(j=JSON.parse(decodeURIComponent(d(f,"state"))),"mpeditor"===j.action&&(b.sessionStorage.setItem("_mpcehash",f),history.replaceState(j.desiredHash||"",c.title,k.pathname+k.search)))}catch(n){}var l,h;window.mixpanel=a;a._i=[];a.init=function(b,d,g){function c(b,i){var a=i.split(".");2==a.length&&(b=b[a[0]],i=a[1]);b[i]=function(){b.push([i].concat(Array.prototype.slice.call(arguments,
-  0)))}}var e=a;"undefined"!==typeof g?e=a[g]=[]:g="mixpanel";e.people=e.people||[];e.toString=function(b){var a="mixpanel";"mixpanel"!==g&&(a+="."+g);b||(a+=" (stub)");return a};e.people.toString=function(){return e.toString(1)+".people (stub)"};l="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
-  for(h=0;h<l.length;h++)c(e,l[h]);var f="set set_once union unset remove delete".split(" ");e.get_group=function(){function a(c){b[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));e.push([d,call2])}}for(var b={},d=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<f.length;c++)a(f[c]);return b};a._i.push([b,d,g])};a.__SV=1.2;b=c.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
-  MIXPANEL_CUSTOM_LIB_URL:"file:"===c.location.protocol&&"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn4.mxpnl.com/libs/mixpanel-2-latest.min.js";d=c.getElementsByTagName("script")[0];d.parentNode.insertBefore(b,d)}})(document,window.mixpanel||[]);
-  mixpanel.init("473a0ed4b5116271a885d85d0b8381b1", {batch_requests: true})</script> --}}
+
+  <script>
+      (function (w,d,s,o,f,js,fjs) {
+          w['circleWidget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+          js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+          js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+      }(window, document, 'script', 'mw', 'https://jackalopemedia.circle.so/external/widget.js'));
+
+      mw('init', {
+        community_public_uid: '064e1b4e',
+        brand_color: '#506CF0'
+      });
+
+      // Optional: pass in a default space slug and/or post slug
+      // mw('setDefaults', {
+      //   space_slug: '',
+      //   post_slug: ''
+      // });
+  </script>
+
+
 </head>

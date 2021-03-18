@@ -1,0 +1,14 @@
+#grid {
+  .card {
+    padding: inherit;
+    // transition: all 1s linear;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: initial;
+    transition-property: initial;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

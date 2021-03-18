@@ -45,7 +45,9 @@
           @php echo date("Y"); @endphp
         </small>
       </p>
-      <small class="smaller text-center mute">* DigitalOcean & Gravity Forms paid products not included</small>
+      <div class="text-center">
+        <p class="badge badge-light">v0.0.7</p>
+      </div>
     </div>
   </div>
   <div class="flex-c-c my-5">
